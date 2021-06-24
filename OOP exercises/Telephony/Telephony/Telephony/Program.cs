@@ -16,8 +16,8 @@ namespace Telephony
 
             foreach (var callerID in callerIDs)
             {
-                string check = "[0-9]";
-                if (Regex.IsMatch(callerID, check))
+                string check = "[^0-9]";
+                if (!Regex.IsMatch(callerID, check))
                 {
                     if (callerID.Length == 7)
                     {
