@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using Bakery.Core.Strategies.Contracts;
 using Bakery.Core.Contracts;
 
-namespace Bakery.Core.Commands
+namespace Bakery.Core.Strategies
 {
     class AddFood : IStrategy
     {

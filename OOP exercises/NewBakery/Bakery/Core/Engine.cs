@@ -10,7 +10,7 @@
     using System.Collections.Generic;
     using Bakery.Core.Strategies;
     using Bakery.Core.Strategies.Contracts;
-    using Bakery.Core.Commands;
+    using System.Reflection;
 
     public class Engine : IEngine
     {
@@ -27,7 +27,7 @@
 
         public void Run()
         {
-            Dictionary<string, IStrategy> strategies = new Dictionary<string, IStrategy>();
+            /*Dictionary<string, IStrategy> strategies = new Dictionary<string, IStrategy>();
             AddFood addFood = new AddFood();
             strategies.Add("AddFood", addFood);
             AddDrink addDrink = new AddDrink();
@@ -45,7 +45,7 @@
             OrderFood orderFood = new OrderFood();
             strategies.Add("OrderFood", orderFood);
             ReserveTable reserveTable = new ReserveTable();
-            strategies.Add("ReserveTable", reserveTable);
+            strategies.Add("ReserveTable", reserveTable);*/
             string input = Console.ReadLine();
 
             while (input != "END")
@@ -56,7 +56,13 @@
 
                 try
                 {
-                    writer.WriteLine(strategies[arguments[0]].Execute(arguments, controller));
+                    //writer.WriteLine(strategies[arguments[0]].Execute(arguments, controller));
+                    Type strategyType = Type.GetType("Bakery.Core.Strategies." + arguments[0]);
+                    MethodInfo strategyMethod = strategyType.GetMethod("Execute");
+                    ConstructorInfo strategyConstructor = strategyType.GetConstructor(Type.EmptyTypes);
+                    object strategyClassObject = strategyConstructor.Invoke(new object[] { });
+                    object strategyValue = strategyMethod.Invoke(strategyClassObject, new object[] { arguments, controller });
+                    Console.WriteLine(strategyValue);
                 }
                 catch (ArgumentNullException ane)
                 {
