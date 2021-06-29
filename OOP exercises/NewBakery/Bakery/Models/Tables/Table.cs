@@ -118,7 +118,7 @@ namespace Bakery.Models.Tables
             string info = null;
             if (!IsReserved)
             {
-                info = "Table: " + TableNumber + "\nType: " + (IsInside ? "Inside Table" : "Outside Table") + "\nCapacity: " + Capacity + "\nPrice Per Person: " + PricePerPerson + "\n";
+                info = "Table: " + TableNumber + "\nType: " + (IsInside ? "OutsideTable" : "InsideTable") + "\nCapacity: " + Capacity + "\nPrice Per Person: " + PricePerPerson + "\n";
             }
             return info;
         }

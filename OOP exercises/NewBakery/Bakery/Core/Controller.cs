@@ -10,14 +10,16 @@ using Bakery.Models.BakedFoods;
 using Bakery.Models.Tables;
 using Bakery.Models.Drinks;
 
+
 namespace Bakery.Core.Contracts
 {
-    class Controller : IController
+
+    public class Controller : IController
     {
-        Dictionary<int, ITable> tables = new Dictionary<int, ITable>();
-        Dictionary<string, IBakedFood> foods= new Dictionary<string, IBakedFood>();
-        Dictionary<string, IDrink> drinks = new Dictionary<string, IDrink>();
-        decimal totalIncome = 0;
+        private Dictionary<int, ITable> tables = new Dictionary<int, ITable>();
+        private Dictionary<string, IBakedFood> foods= new Dictionary<string, IBakedFood>();
+        private Dictionary<string, IDrink> drinks = new Dictionary<string, IDrink>();
+        private decimal totalIncome = 0;
 
         public string AddDrink(string type, string name, int portion, string brand)
         {
