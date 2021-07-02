@@ -18,7 +18,7 @@ namespace Bakery.Core.Strategies
 
             string result = controller.AddTable(tableType, tableNumber, capacity);
 
-            return result;
+            return controller.PrintMessage(printArguments);
         }
     }
 }

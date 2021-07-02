@@ -17,7 +17,7 @@ namespace Bakery.Core.Strategies
 
             string result = controller.OrderFood(tableNum, foodName);
 
-            return result;
+            return controller.PrintMessage(printArguments);
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Bakery.Core.Strategies
 
             string result = controller.ReserveTable(numberOfPeople);
 
-            return result;
+            return controller.PrintMessage(printArguments);
         }
     }
 }

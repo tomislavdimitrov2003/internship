@@ -19,10 +19,13 @@ namespace Bakery.Core.Strategies
             string type = args[1];
             string name = args[2];
             decimal price = decimal.Parse(args[3]);
+            string[] printArguments = new string[2];
+            printArguments[0] = name;
+            printArguments[1] = type;
 
-            string result = controller.AddFood(type, name, price);
+            controller.AddFood(type, name, price);
 
-            return result;
+            return controller.PrintMessage(printArguments);
         }
     }
 }
