@@ -1,5 +1,4 @@
 ﻿using Bakery.Models.BakedFoods;
-using Bakery.Utilities.Enums;
 using Bakery.Utilities.Messages;
 using Bakery.Core;
 using System;
@@ -23,9 +22,9 @@ namespace Bakery.Core.Strategies
             printArguments[0] = name;
             printArguments[1] = type;
 
-            controller.AddFood(type, name, price);
+            string result = controller.AddFood(type, name, price);
 
-            return controller.PrintMessage(printArguments);
+            return result;
         }
     }
 }

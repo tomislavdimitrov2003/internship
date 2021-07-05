@@ -71,12 +71,14 @@ namespace Bakery.Models.Tables
         {
             bool canFitOnTable = numberOfPeople <= Capacity;
             bool canReserve = false;
+
             if (!IsReserved && canFitOnTable)
             {
                 IsReserved = true;
                 canReserve = true;
                 NumberOfPeople = numberOfPeople;
             }
+
             return canReserve;
         }
 
@@ -103,6 +105,7 @@ namespace Bakery.Models.Tables
             {
                 bill += drink.Price;
             }
+
             return bill;
         }
 
@@ -116,10 +119,12 @@ namespace Bakery.Models.Tables
         public string GetFreeTableInfo()
         {
             string info = null;
+
             if (!IsReserved)
             {
                 info = "Table: " + TableNumber + "\nType: " + (IsInside ? "OutsideTable" : "InsideTable") + "\nCapacity: " + Capacity + "\nPrice Per Person: " + PricePerPerson + "\n";
             }
+
             return info;
         }
     }

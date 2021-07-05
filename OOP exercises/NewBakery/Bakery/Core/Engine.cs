@@ -27,25 +27,6 @@
 
         public void Run()
         {
-            /*Dictionary<string, IStrategy> strategies = new Dictionary<string, IStrategy>();
-            AddFood addFood = new AddFood();
-            strategies.Add("AddFood", addFood);
-            AddDrink addDrink = new AddDrink();
-            strategies.Add("AddDrink", addDrink);
-            AddTable addTable = new AddTable();
-            strategies.Add("AddTable", addTable);
-            GetFreeTablesInfo getFreeTablesInfo = new GetFreeTablesInfo();
-            strategies.Add("GetFreeTablesInfo", getFreeTablesInfo);
-            GetTotalIncome getTotalIncome = new GetTotalIncome();
-            strategies.Add("GetTotalIncome", getTotalIncome);
-            LeaveTable leaveTable = new LeaveTable();
-            strategies.Add("LeaveTable", leaveTable);
-            OrderDrink orderDrink = new OrderDrink();
-            strategies.Add("OrderDrink", orderDrink);
-            OrderFood orderFood = new OrderFood();
-            strategies.Add("OrderFood", orderFood);
-            ReserveTable reserveTable = new ReserveTable();
-            strategies.Add("ReserveTable", reserveTable);*/
             string input = Console.ReadLine();
 
             while (input != "END")
@@ -56,7 +37,6 @@
 
                 try
                 {
-                    //writer.WriteLine(strategies[arguments[0]].Execute(arguments, controller));
                     Type strategyType = Type.GetType("Bakery.Core.Strategies." + arguments[0]);
                     MethodInfo strategyMethod = strategyType.GetMethod("Execute");
                     ConstructorInfo strategyConstructor = strategyType.GetConstructor(Type.EmptyTypes);
@@ -72,6 +52,7 @@
                 {
                     writer.WriteLine(ae.Message);
                 }
+
                 input = reader.ReadLine();
             }
         }

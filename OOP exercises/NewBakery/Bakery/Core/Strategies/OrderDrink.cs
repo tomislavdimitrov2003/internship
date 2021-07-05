@@ -18,7 +18,7 @@ namespace Bakery.Core.Strategies
 
             string result = controller.OrderDrink(tableN, drName, drinkBrand);
 
-            return controller.PrintMessage(printArguments);
+            return result;
         }
     }
 }

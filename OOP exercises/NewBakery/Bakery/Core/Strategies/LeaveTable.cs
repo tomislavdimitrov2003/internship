@@ -16,7 +16,7 @@ namespace Bakery.Core.Strategies
 
             string result = controller.LeaveTable(leftTableNum);
 
-            return controller.PrintMessage(printArguments);
+            return result;
         }
     }
 }

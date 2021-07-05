@@ -14,7 +14,7 @@ namespace Bakery.Core.Strategies
         {
             string result = controller.GetFreeTablesInfo();
 
-            return controller.PrintMessage(printArguments);
+            return result;
         }
     }
 }
