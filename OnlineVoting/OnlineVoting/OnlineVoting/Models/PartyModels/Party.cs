@@ -31,7 +31,7 @@ namespace OnlineVoting.Models.PartyModels
 
         public override string ToString()
         {
-            return "ID: " + ID + " Name: " + Name + " Location: " + Location;
+            return "ID: " + this.ID + " Name: " + this.Name + " Location: " + this.Location;
         }
     }
 }

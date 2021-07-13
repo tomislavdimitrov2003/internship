@@ -62,6 +62,7 @@ namespace OnlineVoting.Models.UserModels.BaseUser
         public string GetDeputiesForParty(int partyID)
         {
             string result = "";
+            
             result += "Deputies for " + Database.Parties[partyID].Name + ":\n";
 
             foreach (Deputy deputy in Database.Parties[partyID].Deputies.Values)
@@ -95,6 +96,7 @@ namespace OnlineVoting.Models.UserModels.BaseUser
 
         public void DoesDeputyIDExist(int partyID, int deputyID)
         {
+            DoesPartyIDExist(partyID);
             if (!Database.Parties[partyID].Deputies.ContainsKey(deputyID))
             {
                 throw (new Exception("Wrong DeputyID."));

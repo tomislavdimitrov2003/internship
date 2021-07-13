@@ -30,6 +30,7 @@ namespace OnlineVoting.Core
                     ConstructorInfo strategyConstructor = strategyType.GetConstructor(Type.EmptyTypes);
                     object strategyClassObject = strategyConstructor.Invoke(new object[] { });
                     object strategyValue = strategyMethod.Invoke(strategyClassObject, new object[] { currentUser, arguments });
+                    
                     Console.Write(strategyValue);
                     input = Console.ReadLine();
                 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OnlineVoting
 {
-    class Program
+    class StartUp
     {
         static void Main(string[] args)
         {

@@ -21,7 +21,6 @@ namespace OnlineVoting.Models.UserModels
         {
             if (!hasVoted && Age >= 18) 
             {
-                DoesPartyIDExist(partyID);
                 DoesDeputyIDExist(partyID, deputyID);
                 Database.Parties[partyID].Votes++;
                 Database.Parties[partyID].Deputies[deputyID].Votes++;
@@ -31,7 +30,7 @@ namespace OnlineVoting.Models.UserModels
 
         public override string ToString() 
         {
-            return "ID: " + ID + " Name: " + Name + " Age: " + Age + " Gender: " + Gender;
+            return "ID: " + this.ID + " Name: " + this.Name + " Age: " + this.Age + " Gender: " + this.Gender;
         }
     }
 }

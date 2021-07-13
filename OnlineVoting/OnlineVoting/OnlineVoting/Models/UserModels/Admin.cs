@@ -56,7 +56,6 @@ namespace OnlineVoting.Models.UserModels
 
             foreach (Voter user in Database.Users.Values.Skip(1))
             {
-
                 result += user.ToString() + "\n";
             }
 
@@ -73,7 +72,6 @@ namespace OnlineVoting.Models.UserModels
 
         public void DeleteDeputy(int partyID, int deputyID)
         {
-            DoesPartyIDExist(partyID);
             DoesDeputyIDExist(partyID, deputyID);
 
             Database.Parties[partyID].Deputies.Remove(deputyID);
@@ -81,7 +79,6 @@ namespace OnlineVoting.Models.UserModels
 
         public void EditDeputy(int partyID, int deputyID, string deputyName)
         {
-            DoesPartyIDExist(partyID);
             DoesDeputyIDExist(partyID, deputyID);
 
             Database.Parties[partyID].Deputies[deputyID].Name = deputyName;
