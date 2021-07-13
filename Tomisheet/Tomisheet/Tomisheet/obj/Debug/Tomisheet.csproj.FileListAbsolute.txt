@@ -1,0 +1,7 @@
+C:\internship\internship\Tomisheet\Tomisheet\Tomisheet\bin\Debug\Tomisheet.exe.config
+C:\internship\internship\Tomisheet\Tomisheet\Tomisheet\bin\Debug\Tomisheet.exe
+C:\internship\internship\Tomisheet\Tomisheet\Tomisheet\bin\Debug\Tomisheet.pdb
+C:\internship\internship\Tomisheet\Tomisheet\Tomisheet\obj\Debug\Tomisheet.csproj.AssemblyReference.cache
+C:\internship\internship\Tomisheet\Tomisheet\Tomisheet\obj\Debug\Tomisheet.csproj.CoreCompileInputs.cache
+C:\internship\internship\Tomisheet\Tomisheet\Tomisheet\obj\Debug\Tomisheet.exe
+C:\internship\internship\Tomisheet\Tomisheet\Tomisheet\obj\Debug\Tomisheet.pdb
