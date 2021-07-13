@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using Tomisheet.Core;
@@ -15,18 +16,23 @@ namespace Tomisheet.Models.UserModels
 
         public void AddUser(string name, string password, List<int> TeamIDs, int roleID)
         {
+            string savedPasswordHash = Authentication.HashPassword(password);
             Database.LastUserID++;
-            if (roleID == 1) 
+            if (roleID == 1)
             {
-                Database.Users.Add(Database.LastUserID, new Employee(Database.LastUserID, name, TeamIDs, roleID, password));
+                Database.Users.Add(Database.LastUserID, new Employee(Database.LastUserID, name, TeamIDs, roleID, savedPasswordHash));
             }
-            else if (roleID == 2) 
+            else if (roleID == 2)
             {
-                Database.Users.Add(Database.LastUserID, new Manager(Database.LastUserID, name, TeamIDs, roleID, password));
+                Database.Users.Add(Database.LastUserID, new Manager(Database.LastUserID, name, TeamIDs, roleID, savedPasswordHash));
             }
-            else if (roleID == 3) 
+            else if (roleID == 3)
             {
-                Database.Users.Add(Database.LastUserID, new Admin(Database.LastUserID, name, TeamIDs, roleID, password));
+                Database.Users.Add(Database.LastUserID, new Admin(Database.LastUserID, name, TeamIDs, roleID, savedPasswordHash));
+            }
+            else 
+            {
+                throw (new Exception("Invalid RoleID"));
             }
         }
 
@@ -37,7 +43,8 @@ namespace Tomisheet.Models.UserModels
 
         public void ChangeUserPassword(int userID, string password) 
         {
-            Database.Users[userID].Password = password;
+            string savedPasswordHash = Authentication.HashPassword(password);
+            Database.Users[userID].Password = savedPasswordHash;
         }
 
         public void DeleteUser(int userID)

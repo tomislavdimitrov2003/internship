@@ -30,7 +30,8 @@ namespace Tomisheet.Models.UserModels
         public void CreateTimesheetRecord(int timesheetID, int projectID, string taskName, DateTime startTime, DateTime endTime)
         {
             Database.Timesheets[timesheetID].LastRowID++;
-            Database.Timesheets[timesheetID].Rows.Add(Database.Timesheets[timesheetID].LastRowID, new Row(Database.Timesheets[timesheetID].LastRowID, ID, projectID, taskName, startTime, endTime));
+            Row newRow = new Row(Database.Timesheets[timesheetID].LastRowID, ID, projectID, taskName, startTime, endTime);
+            Database.Timesheets[timesheetID].Rows.Add(Database.Timesheets[timesheetID].LastRowID, newRow);
         }
 
         public void EditTimesheetRecord(int timesheetID, int rowID, int projectID, string taskName, DateTime startTime, DateTime endTime)

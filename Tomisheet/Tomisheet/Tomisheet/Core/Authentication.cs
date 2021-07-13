@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using Tomisheet.Models.UserModels;
@@ -14,13 +15,51 @@ namespace Tomisheet.Core
             
             string input = Console.ReadLine();
             string[] args = input.Split();
-            foreach (User user in Database.Users.Values)
+
+            if (PasswordIsValid(args[0], args[1]))
             {
-                if (user.Name == args[0] && user.Password == args[1]) 
+                User user = Database.Users.Where(x => x.Value.Name == args[0]).FirstOrDefault().Value;
+                Engine.Run(user);
+            }
+            else 
+            {
+                throw (new Exception("Wrong Password"));
+            }
+        }
+
+        public static string HashPassword(string password) 
+        {
+            byte[] salt;
+            new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
+            var pbkdf2 = new Rfc2898DeriveBytes(password, salt, 100000);
+            byte[] hash = pbkdf2.GetBytes(20);
+            byte[] hashBytes = new byte[36];
+            Array.Copy(salt, 0, hashBytes, 0, 16);
+            Array.Copy(hash, 0, hashBytes, 16, 20);
+            string savedPasswordHash = Convert.ToBase64String(hashBytes);
+
+            return savedPasswordHash;
+        }
+
+        public static bool PasswordIsValid(string name, string password)
+        {
+            User user = Database.Users.Where(x => x.Value.Name == name).FirstOrDefault().Value;
+            string savedPasswordHash = user.Password;
+            byte[] hashBytes = Convert.FromBase64String(savedPasswordHash);
+            byte[] salt = new byte[16];
+            Array.Copy(hashBytes, 0, salt, 0, 16);
+            var pbkdf2 = new Rfc2898DeriveBytes(password, salt, 100000);
+            byte[] hash = pbkdf2.GetBytes(20);
+            bool isValid = true;
+            for (int i = 0; i < 20; i++) 
+            { 
+                if (hashBytes[i + 16] != hash[i])
                 {
-                    Engine.Run(user);
+                    isValid = false;
                 }
             }
+
+            return isValid;
         }
     }
 }
