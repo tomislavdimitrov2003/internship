@@ -51,6 +51,7 @@
     <Compile Include="Core\Strategy\ChangeUserPassword.cs" />
     <Compile Include="Core\Strategy\CreateTimesheet.cs" />
     <Compile Include="Core\Strategy\CreateTimesheetRecord.cs" />
+    <Compile Include="Core\Strategy\DeleteAllTimesheets.cs" />
     <Compile Include="Core\Strategy\DeleteTimesheet.cs" />
     <Compile Include="Core\Strategy\DeleteTimesheetRecord.cs" />
     <Compile Include="Core\Strategy\DeleteUser.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Models\UserModels\Employee.cs" />
     <Compile Include="Models\UserModels\Manager.cs" />
     <Compile Include="Models\UserModels\User.cs" />
+    <Compile Include="Models\UserModels\UserRoleIDs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -15,7 +15,7 @@ namespace Tomisheet
             List<int> teamIDs = new List<int>();
             teamIDs.Add(0);
             string password = Authentication.HashPassword("admin");
-            Database.Users.Add(0, new Admin(0, "Admin", teamIDs, 3, password));
+            Database.Users.Add(0, new Admin(0, "Admin", teamIDs, (int) UserRoleIDs.Admin, password));
             Authentication.Login();
         }
     }

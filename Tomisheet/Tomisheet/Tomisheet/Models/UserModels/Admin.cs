@@ -18,15 +18,15 @@ namespace Tomisheet.Models.UserModels
         {
             string savedPasswordHash = Authentication.HashPassword(password);
             Database.LastUserID++;
-            if (roleID == 1)
+            if (roleID == (int) UserRoleIDs.Employee)
             {
                 Database.Users.Add(Database.LastUserID, new Employee(Database.LastUserID, name, TeamIDs, roleID, savedPasswordHash));
             }
-            else if (roleID == 2)
+            else if (roleID == (int) UserRoleIDs.Manager)
             {
                 Database.Users.Add(Database.LastUserID, new Manager(Database.LastUserID, name, TeamIDs, roleID, savedPasswordHash));
             }
-            else if (roleID == 3)
+            else if (roleID == (int) UserRoleIDs.Admin)
             {
                 Database.Users.Add(Database.LastUserID, new Admin(Database.LastUserID, name, TeamIDs, roleID, savedPasswordHash));
             }

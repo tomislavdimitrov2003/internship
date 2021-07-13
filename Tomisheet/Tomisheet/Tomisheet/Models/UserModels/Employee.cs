@@ -27,6 +27,13 @@ namespace Tomisheet.Models.UserModels
             TimesheetIDs.Remove(id);
         }
 
+        public void DeleteAllTimesheets() 
+        {
+            foreach (int id in TimesheetIDs)
+            {
+                DeleteTimesheet(id);
+            }
+        }
         public void CreateTimesheetRecord(int timesheetID, int projectID, string taskName, DateTime startTime, DateTime endTime)
         {
             Database.Timesheets[timesheetID].LastRowID++;
