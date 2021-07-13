@@ -20,7 +20,7 @@ namespace Tomisheet.Core.Strategy
 
             currentUser.CreateTimesheetRecord(timesheetID, projectID, taskName, startTime, endTime);
 
-            return "";
+            return "Timesheet Record Created.\n";
         }
     }
 }

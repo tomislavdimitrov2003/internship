@@ -20,7 +20,7 @@ namespace Tomisheet.Core.Strategy
 
             currentUser.EditTimesheetRecord(timesheetID, rowID, projectID, taskName, startTime, endTime);
 
-            return "";
+            return "Timesheet Record Edited.\n";
         }
     }
 }

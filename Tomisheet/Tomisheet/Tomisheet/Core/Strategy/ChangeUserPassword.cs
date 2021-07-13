@@ -16,7 +16,7 @@ namespace Tomisheet.Core.Strategy
 
             currentUser.ChangeUserPassword(userID, password);
 
-            return "";
+            return "Password Changed.\n";
         }
     }
 }

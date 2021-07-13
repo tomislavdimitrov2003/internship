@@ -13,7 +13,7 @@ namespace Tomisheet.Core.Strategy
         {
             currentUser.LogOut();
 
-            return "";
+            return "Logged Out.\n";
         }
     }
 }

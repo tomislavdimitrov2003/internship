@@ -15,7 +15,7 @@ namespace Tomisheet.Core.Strategy
 
             currentUser.CreateTimesheet(name);
 
-            return "";
+            return "Timesheet Created.\n";
         }
     }
 }

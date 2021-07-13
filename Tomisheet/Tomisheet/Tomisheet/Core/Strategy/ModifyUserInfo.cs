@@ -16,7 +16,7 @@ namespace Tomisheet.Core.Strategy
 
             currentUser.ModifyUserInfo(userID, name);
 
-            return "";
+            return "User Info Modified.\n";
         }
     }
 }

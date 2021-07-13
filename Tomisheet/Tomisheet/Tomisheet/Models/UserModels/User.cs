@@ -37,5 +37,10 @@ namespace Tomisheet.Models.UserModels
         {
             Authentication.Login();
         }
+
+        public override string ToString()
+        {
+            return ID + " " + Name;
+        }
     }
 }

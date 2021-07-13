@@ -48,6 +48,7 @@
     <Compile Include="Core\Engine.cs" />
     <Compile Include="Core\Report.cs" />
     <Compile Include="Core\Strategy\AddUser.cs" />
+    <Compile Include="Core\Strategy\AllUsersInfo.cs" />
     <Compile Include="Core\Strategy\ChangeUserPassword.cs" />
     <Compile Include="Core\Strategy\CreateTimesheet.cs" />
     <Compile Include="Core\Strategy\CreateTimesheetRecord.cs" />
@@ -60,7 +61,9 @@
     <Compile Include="Core\Strategy\GetTeamTimeReport.cs" />
     <Compile Include="Core\Strategy\GetTimeSpentForPeriodReport.cs" />
     <Compile Include="Core\Strategy\LogOut.cs" />
+    <Compile Include="Core\Strategy\Manual.cs" />
     <Compile Include="Core\Strategy\ModifyUserInfo.cs" />
+    <Compile Include="IO.cs" />
     <Compile Include="Models\TimesheetModels\Row.cs" />
     <Compile Include="Models\TimesheetModels\Timesheet.cs" />
     <Compile Include="Models\UserModels\Admin.cs" />

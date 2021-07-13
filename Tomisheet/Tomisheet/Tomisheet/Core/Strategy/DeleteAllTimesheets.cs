@@ -13,7 +13,7 @@ namespace Tomisheet.Core.Strategy
         {
             currentUser.DeleteAllTimesheets();
 
-            return "";
+            return "All Timesheets Deleted.\n";
         }
     }
 }

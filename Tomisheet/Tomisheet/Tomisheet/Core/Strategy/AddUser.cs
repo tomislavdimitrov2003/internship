@@ -23,7 +23,7 @@ namespace Tomisheet.Core.Strategy
 
             currentUser.AddUser(name, password, teamIDs, roleID);
 
-            return "";
+            return "User Added.\n";
         }
     }
 }

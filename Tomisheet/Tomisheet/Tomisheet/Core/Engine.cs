@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -12,7 +13,8 @@ namespace Tomisheet.Core
     {
         public static void Run(User currentUser) 
         {
-            string input = Console.ReadLine();
+            IO.Write("Hi " + currentUser.Name + "\n");
+            string input = IO.ReadLine();
 
             while (input != "END")
             {
@@ -25,8 +27,8 @@ namespace Tomisheet.Core
                     object strategyClassObject = strategyConstructor.Invoke(new object[] { });
  
                     object strategyValue = strategyMethod.Invoke(strategyClassObject, new object[] { currentUser, arguments });
-                    Console.Write(strategyValue);
-                    input = Console.ReadLine();
+                    IO.Write(strategyValue.ToString());
+                    input = IO.ReadLine();
                 }
                 catch (NullReferenceException)
                 {
@@ -48,6 +50,7 @@ namespace Tomisheet.Core
                     throw (new Exception(message));
                 }
             }
+            IO.Close();
         }
     }
 }

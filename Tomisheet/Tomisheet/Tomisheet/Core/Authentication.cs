@@ -13,18 +13,22 @@ namespace Tomisheet.Core
         public static void Login() 
         {
             
-            string input = Console.ReadLine();
+            string input = IO.ReadLine();
             string[] args = input.Split();
-
+            string a;
+            //Console.WriteLine(input);
             if (PasswordIsValid(args[0], args[1]))
             {
                 User user = Database.Users.Where(x => x.Value.Name == args[0]).FirstOrDefault().Value;
+                a = user.Name;
+
                 Engine.Run(user);
             }
             else 
             {
                 throw (new Exception("Wrong Password"));
             }
+            Console.WriteLine(a);
         }
 
         public static string HashPassword(string password) 

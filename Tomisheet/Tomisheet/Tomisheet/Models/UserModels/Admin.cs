@@ -51,5 +51,17 @@ namespace Tomisheet.Models.UserModels
         {
             Database.Users.Remove(userID);
         }
+
+        public string AllUsersInfo()
+        {
+            string result = "";
+
+            foreach (User user in Database.Users.Values)
+            {
+                result += user.ToString();
+            }
+
+            return result;
+        }
     }
 }

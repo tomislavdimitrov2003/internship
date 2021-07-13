@@ -15,7 +15,7 @@ namespace Tomisheet.Core.Strategy
 
             currentUser.DeleteTimesheet(id);
 
-            return "";
+            return "Timesheet Deleted.\n";
         }
     }
 }

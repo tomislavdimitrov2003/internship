@@ -15,7 +15,7 @@ namespace Tomisheet.Core.Strategy
 
             currentUser.DeleteUser(userID);
 
-            return "";
+            return "User Deleted.\n";
         }
     }
 }
