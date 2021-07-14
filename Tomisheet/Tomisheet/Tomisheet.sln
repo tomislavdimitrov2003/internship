@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomisheet", "Tomisheet\Tomisheet.csproj", "{322802B2-6136-44F4-96C3-6A4E9AFFAF62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomisheetTest", "TomisheetTest\TomisheetTest.csproj", "{E8C65C08-0628-4BBE-91E9-1155E68B8FE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{322802B2-6136-44F4-96C3-6A4E9AFFAF62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{322802B2-6136-44F4-96C3-6A4E9AFFAF62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{322802B2-6136-44F4-96C3-6A4E9AFFAF62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{322802B2-6136-44F4-96C3-6A4E9AFFAF62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8C65C08-0628-4BBE-91E9-1155E68B8FE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8C65C08-0628-4BBE-91E9-1155E68B8FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8C65C08-0628-4BBE-91E9-1155E68B8FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8C65C08-0628-4BBE-91E9-1155E68B8FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0CA40117-747C-4CB1-9CE0-A02148262599}
+	EndGlobalSection
+EndGlobal

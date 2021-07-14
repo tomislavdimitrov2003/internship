@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{322802B2-6136-44F4-96C3-6A4E9AFFAF62}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Tomisheet</RootNamespace>
+    <AssemblyName>Tomisheet</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Authentication.cs" />
+    <Compile Include="Core\Database.cs" />
+    <Compile Include="Core\Engine.cs" />
+    <Compile Include="Core\Report.cs" />
+    <Compile Include="Core\Strategy\AddUser.cs" />
+    <Compile Include="Core\Strategy\AllUsersInfo.cs" />
+    <Compile Include="Core\Strategy\ChangeUserPassword.cs" />
+    <Compile Include="Core\Strategy\CreateTimesheet.cs" />
+    <Compile Include="Core\Strategy\CreateTimesheetRecord.cs" />
+    <Compile Include="Core\Strategy\DeleteAllTimesheets.cs" />
+    <Compile Include="Core\Strategy\DeleteTimesheet.cs" />
+    <Compile Include="Core\Strategy\DeleteTimesheetRecord.cs" />
+    <Compile Include="Core\Strategy\DeleteUser.cs" />
+    <Compile Include="Core\Strategy\EditTimesheetRecord.cs" />
+    <Compile Include="Core\Strategy\GetProjectTimeReport.cs" />
+    <Compile Include="Core\Strategy\GetTeamTimeReport.cs" />
+    <Compile Include="Core\Strategy\GetTimeSpentForPeriodReport.cs" />
+    <Compile Include="Core\Strategy\LogOut.cs" />
+    <Compile Include="Core\Strategy\Manual.cs" />
+    <Compile Include="Core\Strategy\ModifyUserInfo.cs" />
+    <Compile Include="IO.cs" />
+    <Compile Include="Models\TimesheetModels\Row.cs" />
+    <Compile Include="Models\TimesheetModels\Timesheet.cs" />
+    <Compile Include="Models\UserModels\Admin.cs" />
+    <Compile Include="Models\UserModels\Employee.cs" />
+    <Compile Include="Models\UserModels\Manager.cs" />
+    <Compile Include="Models\UserModels\User.cs" />
+    <Compile Include="Models\UserModels\UserRoleIDs.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
