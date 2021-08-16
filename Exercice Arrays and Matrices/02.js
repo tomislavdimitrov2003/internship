@@ -5,12 +5,6 @@ function solve(input) {
         console.log(array[i]);
     }
 }
-    solve(['1', 
-    '2',
-    '3', 
-    '4', 
-    '5', 
-    '6']
-    
-    )
+
+solve(['1', '2', '3', '4', '5', '6'])
 

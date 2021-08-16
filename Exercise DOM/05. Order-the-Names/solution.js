@@ -26,7 +26,7 @@ function solve() {
         X: [],
         Y: [],
         Z: []
-    } 
+    }
     document.querySelector("#exercise > article > button").addEventListener('click', main);
     function main() {
         let name = document
@@ -40,7 +40,7 @@ function solve() {
     }
     function addName(name) {
         name = name.substring(0, 1).toUpperCase() +
-        name.substring(1).toLowerCase();
+            name.substring(1).toLowerCase();
         database[name[0]].push(name);
         return name;
     }

@@ -13,9 +13,4 @@ function solve(array) {
     console.log(JSON.stringify(info));
 }
 
-solve([
-    'Isacc / 25.0 / ',
-'Derek / 12 / BarrelVest, DestructionSword',
-'Hes / 1 / Desolator, Sentinel, Antara'
-
-]);
+solve(['Isacc / 25.0 / ', 'Derek / 12 / BarrelVest, DestructionSword', 'Hes / 1 / Desolator, Sentinel, Antara']);

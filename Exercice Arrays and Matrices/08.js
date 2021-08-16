@@ -8,22 +8,22 @@ function solve(input) {
     for (let line of input) {
         let [row, column] = line.split(' ').map((n) => Number(n));
         dashboard[row][column] === false ? markPlace(row, column) : filledPlace();
-        if(winner !== ''){
+        if (winner !== '') {
             break;
         }
-        if(freeAreas === 0){
+        if (freeAreas === 0) {
             console.log('The game ended! Nobody wins :(');
             break;
         }
     }
     return dashboard.map((n) => n.join('\t')).join('\n');
-    function checkForWinner(row, column){
+    function checkForWinner(row, column) {
         checkForLine(...dashboard[row]);
         checkForLine(dashboard[0][column], dashboard[1][column], dashboard[2][column]);
         checkForLine(dashboard[0][0], dashboard[1][1], dashboard[2][2]);
         checkForLine(dashboard[0][2], dashboard[1][1], dashboard[2][0]);
-        function checkForLine(a, b, c){
-            if(a === b && b === c && b != false){
+        function checkForLine(a, b, c) {
+            if (a === b && b === c && b != false) {
                 winner = activePlayer;
                 console.log(`Player ${winner} wins!`);
                 return winner;
@@ -40,28 +40,5 @@ function solve(input) {
         activePlayer === player1 ? activePlayer = player2 : activePlayer = player1;
     }
 }
-console.log(
-    solve([
-        "0 1",
-        "0 0",
-        "0 2",
-        "2 0",
-        "1 0",
-        "1 1",
-        "1 2",
-        "2 2",
-        "2 1",
-        "0 0"
-    ]));
-console.log(
-    solve(["0 1",
-    "0 0",
-    "0 2",
-    "2 0",
-    "1 0",
-    "1 2",
-    "1 1",
-    "2 1",
-    "2 2",
-    "0 0"]
-   ));
+console.log(solve(["0 1", "0 0", "0 2", "2 0", "1 0", "1 1", "1 2", "2 2", "2 1", "0 0"]));
+console.log(solve(["0 1", "0 0", "0 2", "2 0", "1 0", "1 2", "1 1", "2 1", "2 2", "0 0"]));

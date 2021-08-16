@@ -14,13 +14,13 @@ function solve() {
          checkout();
       }
    }));
-    function addItem(t) {
-         let items = listOfItems();
-         let item = t.target.parentNode.parentNode.children[1].children[0].textContent;
-         let info = `Added ${item} for ${items[item].toFixed(2)} to the cart.`;
-         myCart(items, item);
-         printResult(info);
-      }
+   function addItem(t) {
+      let items = listOfItems();
+      let item = t.target.parentNode.parentNode.children[1].children[0].textContent;
+      let info = `Added ${item} for ${items[item].toFixed(2)} to the cart.`;
+      myCart(items, item);
+      printResult(info);
+   }
    function myCart(items, item) {
       totalMoney += items[item];
       if (!shoppingCart.includes(item)) {

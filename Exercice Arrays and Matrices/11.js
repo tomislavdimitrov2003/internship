@@ -19,9 +19,9 @@ function solve(width, height) {
         else if (row === minY && column === maxX) {
             stepX = 0;
             stepY = 1;
-            if(minY != 0){
-               minX++; 
-            }  
+            if (minY != 0) {
+                minX++;
+            }
         }
         else if (column === maxX && row === maxY) {
             stepX = -1;
@@ -40,6 +40,4 @@ function solve(width, height) {
     return matrix.map((arr) => arr.join(' ')).join('\n');
 }
 
-console.log(
-    solve(4, 5)
-);
+console.log(solve(4, 5));

@@ -28,12 +28,12 @@ function solve(input) {
             .sort((a, b) => systems[b].length - systems[a].length);
     }
     function printResult(obj1, obj2) {
-        for(let i of sortedSystems){
+        for (let i of sortedSystems) {
             console.log(i);
             systems[i].sort((a, b) => components[b].length - components[a].length);
-            for(let j of systems[i]){
+            for (let j of systems[i]) {
                 console.log(`|||${j}`);
-                for(let k of components[j]){
+                for (let k of components[j]) {
                     console.log(`||||||${k}`)
                 }
             }
@@ -41,10 +41,4 @@ function solve(input) {
     }
 }
 
-solve([
-    'SULS | Main Site | Home Page',
-    'SULS | Main Site | Login Page',
-    'SULS | Judge Site | Submittion Page',
-    'bambda | CoreA | A23',
-    'andice | Session | Default Security'
-]);
+solve(['SULS | Main Site | Home Page', 'SULS | Main Site | Login Page', 'SULS | Judge Site | Submittion Page', 'bambda | CoreA | A23', 'andice | Session | Default Security']);

@@ -71,9 +71,4 @@ function solve(input) {
         }
     }
 }
-solve([
-    'a -> 1 -> 1',
-    'b -> 1 -> 0',
-    'a vs b',
-    'Ave Cesar'
-  ]);
+solve(['a -> 1 -> 1', 'b -> 1 -> 0', 'a vs b', 'Ave Cesar']);

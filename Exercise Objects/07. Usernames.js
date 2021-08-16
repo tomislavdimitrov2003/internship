@@ -5,13 +5,4 @@ function solve(input) {
     console.log([...result].join('\n'));
 }
 
-solve(['Ashton',
-'Ashton',
-    'Kutcher',
-    'Ariel',
-    'Lilly',
-    'Keyden',
-    'Aizen',
-    'Billy',
-    'Braston']
-);
+solve(['Ashton', 'Ashton', 'Kutcher', 'Ariel', 'Lilly', 'Keyden', 'Aizen', 'Billy', 'Braston']);

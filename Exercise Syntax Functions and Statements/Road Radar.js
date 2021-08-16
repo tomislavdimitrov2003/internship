@@ -4,19 +4,19 @@ function solve(input) {
         interstate: 90,
         city: 50,
         residential: 20
-    }   
+    }
     let speed = Number(input[0]);
     let area = input[1];
-    if(limits[area] >= speed){
+    if (limits[area] >= speed) {
         return;
     }
-    else if(speed <= (limits[area] + 20)){
+    else if (speed <= (limits[area] + 20)) {
         console.log('speeding');
     }
-    else if(speed <= (limits[area] + 40)){
+    else if (speed <= (limits[area] + 40)) {
         console.log('excessive speeding');
     }
-    else{
+    else {
         console.log('reckless driving');
     }
 }

@@ -9,7 +9,7 @@ function solve([x1, y1, x2, y2]) {
         }
         else {
             console.log(`{${x1}, ${y1}} to {${x2}, ${y2}} is invalid`);
-        }  
+        }
     }
 }
 

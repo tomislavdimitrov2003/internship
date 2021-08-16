@@ -9,8 +9,8 @@ function solve(steps, stepLength, speed) {
     min = replaceZero(min);
     hour = replaceZero(hour);
     console.log(`${hour}:${min}:${sec}`);
-    function replaceZero(value){
-        if(0 <= value && value <= 9){
+    function replaceZero(value) {
+        if (0 <= value && value <= 9) {
             value = '0' + value;
         }
         return value;

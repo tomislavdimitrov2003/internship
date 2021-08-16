@@ -11,20 +11,6 @@ function solve(input) {
         );
     return result.join(' ')
 }
-console.log(solve(
-    ['Banana',
-        'Orange',
-        'Coconut',
-        'Apple',
-        '12']
-))
+console.log(solve(['Banana', 'Orange', 'Coconut', 'Apple', '12']))
 
-console.log(
-    solve(['1',
-        '2',
-        '3',
-        '4',
-        '5',
-        '1']
-    )
-)
+console.log(solve(['1', '2', '3', '4', '5', '1']))

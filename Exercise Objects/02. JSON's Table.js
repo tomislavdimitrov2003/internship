@@ -5,17 +5,13 @@ function solve(array) {
         print(info);
     }
     console.log('</table>');
-    function print(arr){
+    function print(arr) {
         console.log(' <tr>');
-        for(let i of arr){
+        for (let i of arr) {
             console.log(i);
         }
         console.log(' </tr>');
     }
 }
 
-solve([
-    '{"name":"Pesho","position":"Promenliva","salary":100000}',
-    '{"name":"Teo","position":"Lecturer","salary":1000}',
-    '{"name":"Georgi","position":"Lecturer","salary":1000}'
-]);
+solve(['{"name":"Pesho","position":"Promenliva","salary":100000}', '{"name":"Teo","position":"Lecturer","salary":1000}', '{"name":"Georgi","position":"Lecturer","salary":1000}']);

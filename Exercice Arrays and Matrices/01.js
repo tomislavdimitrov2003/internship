@@ -3,10 +3,4 @@ function solve(arr) {
     return arr.join(sym);
 }
 
-solve([
-    'One',
-    'Two',
-    'Three',
-    'Four',
-    'Five',
-    '-']);
+console.log(solve(['One', 'Two', 'Three', 'Four', 'Five', '-']));
