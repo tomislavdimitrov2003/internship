@@ -6,6 +6,7 @@ function solve(name, age, weight, height) {
         status: ''
     }
     information['BMI'] = Math.round((weight * 10000) / (height * height));
+    
     if (information['BMI'] < 18.5) {
         information['status'] = 'underweight';
     }
@@ -19,6 +20,7 @@ function solve(name, age, weight, height) {
         information['status'] = 'obese';
         information['recommendation'] = 'admission required';
     }
+    
     return information;
 }
 

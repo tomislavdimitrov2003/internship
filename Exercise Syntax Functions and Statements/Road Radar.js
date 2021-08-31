@@ -7,6 +7,7 @@ function solve(input) {
     }
     let speed = Number(input[0]);
     let area = input[1];
+    
     if (limits[area] >= speed) {
         return;
     }

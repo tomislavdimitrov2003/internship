@@ -1,5 +1,6 @@
 function solve() {
 
+    const NUM_OF_QUESTIONS = 3;
     let points = 0;
     let correctAnswers = ['onclick', 'JSON.stringify()', 'A programming API for HTML and XML documents'];
     let index = 0;
@@ -13,7 +14,7 @@ function solve() {
             question[index].style.display = 'none';
             index++;
 
-            index !== 3
+            index !== NUM_OF_QUESTIONS
                 ? question[index].style.display = 'block'
                 : printResult(points);
         }));

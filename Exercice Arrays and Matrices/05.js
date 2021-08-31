@@ -1,13 +1,15 @@
 function solve(input) {
-    let array = input.slice();
-    let biggestNum = array[0];
+    let numbers = input.slice();
+    let biggestNum = numbers[0];
     let result = [];
-    for (let num of array) {
+    
+ numbers.forEach((num) => {
         if (num >= biggestNum) {
             result.push(num);
             biggestNum = num;
         }
-    }
+    });
+
     console.log(result.join('\n'));
 }
 

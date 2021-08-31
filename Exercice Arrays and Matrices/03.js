@@ -7,8 +7,10 @@ function solve(input) {
     let result = input.reduce((acc, curr) => {
         acc = commands[curr](acc, counter);
         counter++;
+        
         return acc;
     }, []);
+    
     return result.length === 0 ? 'Empty' : result.join('\n');
 }
 console.log(solve(['add', 'add', 'remove', 'add', 'add']))

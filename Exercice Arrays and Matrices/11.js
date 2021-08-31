@@ -8,10 +8,12 @@ function solve(width, height) {
     let column = 0;
     let stepX = 0;
     let stepY = 0;
+    
     for (let i = 1; i <= height * width; i++) {
         if (column === minX && row === minY) {
             stepX = 1;
             stepY = 0;
+        
             if (i !== 1) {
                 maxY--;
             }
@@ -19,6 +21,7 @@ function solve(width, height) {
         else if (row === minY && column === maxX) {
             stepX = 0;
             stepY = 1;
+        
             if (minY != 0) {
                 minX++;
             }
@@ -37,6 +40,7 @@ function solve(width, height) {
         row += stepY;
         column += stepX;
     }
+    
     return matrix.map((arr) => arr.join(' ')).join('\n');
 }
 

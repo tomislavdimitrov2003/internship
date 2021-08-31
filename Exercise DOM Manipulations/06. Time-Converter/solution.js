@@ -8,18 +8,22 @@ function attachEventsListeners() {
         let days = Number(daysInput.value);
         convertDays(days);
     })
+    
     document.getElementById('hoursBtn').addEventListener('click', function () {
         let days = Number(hoursInput.value) / 24;
         convertDays(days);
     })
+    
     document.getElementById('minutesBtn').addEventListener('click', function () {
         let days = Number(minutesInput.value) / 1440;
         convertDays(days);
     })
+    
     document.getElementById('secondsBtn').addEventListener('click', function () {
         let days = Number(secondsInput.value) / 86400;
         convertDays(days);
     })
+    
     function convertDays(days) {
         const convDays = {
             'days': days,
@@ -29,6 +33,7 @@ function attachEventsListeners() {
         }
         printResult(convDays);
     }
+    
     function printResult(obj) {
         daysInput.value = obj['days'];
         hoursInput.value = obj['hours'];

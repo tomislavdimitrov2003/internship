@@ -6,6 +6,7 @@ function solve() {
   checkbox[0].outerHTML = '<input type=\"checkbox\">';
 
   Object.values(document.getElementsByTagName('button')).map(btn => btn.addEventListener('click', function () {
+    
     if (btn.textContent === 'Generate') {
       createElements();
     }
@@ -16,9 +17,11 @@ function solve() {
 
   function createElements() {
     let furnitureArray = JSON.parse(inputArea.value);
+    
     for (let obj of furnitureArray) {
       let tr = document.createElement('tr');
       let td = document.createElement('td');
+      
       for (let i = 0; i < 5; i++) {
         tr.appendChild(td.cloneNode(true));
       }
@@ -26,6 +29,7 @@ function solve() {
       tbodyMenu.appendChild(tr);
     }
   }
+  
   function fillElements(tr, obj) {
     tr.children[0].innerHTML = `<img src=${obj['img']}>`;
     tr.children[1].innerHTML = `<p>${obj['name']}</p>`;
@@ -33,6 +37,7 @@ function solve() {
     tr.children[3].innerHTML = `<p>${obj['decFactor']}</p>`;
     tr.children[4].innerHTML = `<input type="checkbox"/>`;
   }
+  
   function findMarkedObjects() {
     outputArea.value = '';
     let myOrder = [];
@@ -40,6 +45,7 @@ function solve() {
     let decFactor = 0;
     let menuLength = tbodyMenu.children.length;
     let rows = tbodyMenu.children;
+    
     for (let i = 0; i < menuLength; i++) {
       if (checkbox[i].checked === true) {
         let td = rows[i].children;
@@ -47,12 +53,14 @@ function solve() {
       }
     }
     printResult(myOrder, totalPrice, decFactor);
+    
     function addFurniture(td) {
       myOrder.push(td[1].textContent.trim());
       totalPrice += Number(td[2].textContent);
       decFactor += Number(td[3].textContent);
     }
   }
+  
   function printResult(myOrder, totalPrice, decFactor) {
     outputArea.value +=
       `Bought furniture: ${myOrder.join(', ')} \n` +

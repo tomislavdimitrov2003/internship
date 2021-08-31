@@ -7,13 +7,16 @@ function solve() {
    }
 
    document.getElementById('searchBtn').addEventListener('click', main);
+
    function main() {
       for (let tr of body) {
          tr.classList.remove('select');
       }
+
       if (input.value == '') {
          return '';
       }
+
       for (let tr of body) {
          if (tr.textContent.includes(input.value)) {
             tr.classList.add('select');

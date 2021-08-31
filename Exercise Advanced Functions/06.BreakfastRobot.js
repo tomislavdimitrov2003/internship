@@ -25,46 +25,59 @@ let solution = (function () {
             flavour: 10
         }
     }
+    
     let storage = {
         protein: 0,
         carbohydrate: 0,
         fat: 0,
         flavour: 0
     };
+    
     function addMicroelement(microelement, quantity) {
         storage[microelement] += quantity;
         return 'Success';
     }
+    
     function prepareProduct(recipe, quantity) {
         let checkStoreage = isEnough();
+        
         if (checkStoreage === 'Success') {
             cook();
         }
+        
         return checkStoreage;
+        
         function cook() {
             for (let microelement in products[recipe]) {
                 let needed = products[recipe][microelement] * quantity;
                 storage[microelement] -= needed;
             }
         }
+        
         function isEnough() {
             let result = 'Success';
+            
             for (let microelement in products[recipe]) {
                 let needed = products[recipe][microelement] * quantity;
+                
                 if (storage[microelement] < needed) {
                     result = `Error: not enough ${microelement} in stock`;
                     break;
                 }
             }
+            
             return result;
         }
     }
+    
     function storeInfo() {
         return Object.keys(storage).map((key) => { return `${key}=${storage[key]}` }).join(' ');
     }
+    
     return function () {
         let [command, type, quantity] = arguments[0].split(' ');
         quantity = Number(quantity);
+        
         const functions = {
             restock: () => {
                 return addMicroelement(type, quantity);
@@ -76,9 +89,11 @@ let solution = (function () {
                 return storeInfo();
             }
         }
+        
         return functions[command]();
     };
 });
+
 let manager = solution();
 
 console.log(manager('restock flavour 50'));

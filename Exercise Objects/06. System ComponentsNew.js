@@ -1,5 +1,6 @@
 function solve(input) {
     let systems = {};
+    
     for (let line of input) {
         inputInfo(line);
     }
@@ -7,9 +8,11 @@ function solve(input) {
     printResult(sortedList);
     function inputInfo(line) {
         let [system, comp, subcomp] = line.split(' | ');
+        
         if (!systems.hasOwnProperty(system)) {
             systems[system] = {};
         }
+        
         if (!systems[system].hasOwnProperty(comp)) {
             systems[system][comp] = [];
         }
@@ -19,19 +22,23 @@ function solve(input) {
         let sortedSystems = Object.keys(systems)
             .sort((a, b) => a.localeCompare(b))
             .sort((a, b) => Object.values(systems[b]).length - Object.values(systems[a]).length);
+        
         return sortedSystems;
     }
     function sortComponents(obj) {
         let sortedComponents = Object.keys(obj)
             .sort((a, b) => obj[b].length - obj[a].length);
+        
         return sortedComponents;
     }
     function printResult(sortedList) {
         for (let i of sortedList) {
             console.log(i);
             let sortedComponents = sortComponents(systems[i]);
+            
             for (let j of sortedComponents) {
                 console.log(`|||${j}`);
+                
                 for (let k of systems[i][j]) {
                     console.log(`||||||${k}`);
                 }

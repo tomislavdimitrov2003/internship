@@ -1,6 +1,8 @@
 function solve(input) {
     let num = Number(input.shift());
+    
     for (let i of input) {
+        
         if (i == 'chop') {
             num /= 2;
         }

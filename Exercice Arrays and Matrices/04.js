@@ -1,16 +1,15 @@
 function solve(input) {
-    let array = input.slice();
-    let rotation = Number(array.pop()) % array.length;
+    let result = input.slice();
+    let rotation = Number(result.pop()) % result.length;
+    
     if (rotation === 0) {
-        return array.join(' ');
+        result = result.join(' ');
+    }else{
+        result = (result.slice(-rotation).concat(result.slice(0, result.length - rotation))).join(' ');
     }
-    let result = array
-        .slice(-rotation)
-        .concat(array
-            .slice(0, array.length - rotation)
-        );
-    return result.join(' ')
+    
+    return result;
 }
-console.log(solve(['Banana', 'Orange', 'Coconut', 'Apple', '12']))
+console.log(solve(['Banana', 'Orange', 'Coconut', 'Apple', '15']))
 
-console.log(solve(['1', '2', '3', '4', '5', '1']))
+console.log(solve(['1', '2', '3', '4', '2']))

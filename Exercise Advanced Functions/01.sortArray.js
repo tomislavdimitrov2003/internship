@@ -3,6 +3,7 @@ function solve(array, string) {
         asc: (a, b) => a - b,
         desc: (a, b) => b - a
     }
+    
     return array.sort(obj[string]);
 }
 console.log(solve([14, 7, 17, 6, 8], 'asc'));

@@ -1,5 +1,6 @@
 function solve(arr) {
     let sym = arr.pop();
+    
     return arr.join(sym);
 }
 
