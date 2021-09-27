@@ -9,6 +9,7 @@ import Paper from "@material-ui/core/Paper";
 import { makeStyles } from '@material-ui/core/styles';
 import { deepPurple } from '@material-ui/core/colors';
 import { renderBoard } from './BoardRender';
+import { down, left, n, right, up } from './KeyCodes';
 
 
 export class Board extends React.Component {
@@ -20,25 +21,22 @@ export class Board extends React.Component {
             scoreboard: null,
             size: 4,
             gameOver: false,
-            message: null
+            message: ""
         };
     }
 
 
     initBoard(newSize = this.state.size) {
         let board = new Array(newSize).fill(0).map(() => new Array(newSize).fill(0));
-        console.log(newSize);
         board = this.placeRandom(this.placeRandom(board));
         this.setState({ board, score: 0, gameOver: false, message: null });
     }
 
     componentDidUpdate(prevProps) {
         if (this.props.size !== prevProps.size) {
-            console.log(this.props.size);
-            this.state.size = this.props.size;
-            console.log(this.state.size);
-            this.initBoard();
-          }
+            this.setState({ size: this.props.size });
+            this.initBoard(this.props.size);
+        }
     }
 
     getBlankTiles(board) {
@@ -46,7 +44,9 @@ export class Board extends React.Component {
 
         for (let i = 0; i < board.length; i++) {
             for (let j = 0; j < board[i].length; j++) {
-                if (board[i][j] === 0) { blankTiles.push([i, j]) }
+                if (board[i][j] === 0) {
+                    blankTiles.push([i, j]);
+                }
             }
         }
 
@@ -56,7 +56,11 @@ export class Board extends React.Component {
     placeRandom(board) {
         const blankCoordinates = this.getBlankTiles(board);
         const randomTile = Math.floor(Math.random() * blankCoordinates.length);
-        board[blankCoordinates[randomTile][0]][blankCoordinates[randomTile][1]] = (Math.round(Math.random()) % 2 + 1) * 2;
+        const x = blankCoordinates[randomTile][0];
+        const y = blankCoordinates[randomTile][1];
+        const randomNumber = (Math.round(Math.random()) % 2 + 1) * 2;
+        board[x][y] = randomNumber;
+
         return board;
     }
 
@@ -65,37 +69,39 @@ export class Board extends React.Component {
     }
 
     move(direction) {
-        if (!this.state.gameOver) {
-            let movedBoard;
+        if (this.state.gameOver) {
+            return false;
+        }
 
-            if (direction === 'up') {
-                movedBoard = this.moveUp(this.state.board);
-            } else if (direction === 'right') {
-                movedBoard = this.moveRight(this.state.board);
-            } else if (direction === 'down') {
-                movedBoard = this.moveDown(this.state.board);
-            } else if (direction === 'left') {
-                movedBoard = this.moveLeft(this.state.board);
-            }
+        let movedBoard;
 
-            if (this.boardMoved(this.state.board, movedBoard.board)) {
-                const boardWithRandom = this.placeRandom(movedBoard.board);
+        if (direction === 'up') {
+            movedBoard = this.moveUp(this.state.board);
+        } else if (direction === 'right') {
+            movedBoard = this.moveRight(this.state.board);
+        } else if (direction === 'down') {
+            movedBoard = this.moveDown(this.state.board);
+        } else if (direction === 'left') {
+            movedBoard = this.moveLeft(this.state.board);
+        }
 
-                if (this.checkForGameOver(boardWithRandom)) {
-                    if(this.props.onGameOver) {
-                        this.props.onGameOver(this.state.score);
-                    }
-                    this.setState({ board: boardWithRandom, gameOver: true, message: 'Game over!' });
-                } else {
-                    this.setState({ board: boardWithRandom, score: this.state.score += movedBoard.score });
+        if (this.boardMoved(this.state.board, movedBoard.board)) {
+            const boardWithRandom = this.placeRandom(movedBoard.board);
+
+            if (this.checkForGameOver(boardWithRandom)) {
+                if (this.props.onGameOver) {
+                    this.props.onGameOver(this.state.score);
                 }
+                this.setState({ board: boardWithRandom, gameOver: true, message: 'Game over!' });
+            } else {
+                this.setState({ board: boardWithRandom, score: this.state.score += movedBoard.score });
             }
         }
     }
 
     moveUp(inputBoard) {
         let rotatedRight = this.rotateRight(inputBoard);
-        let {board, score} = this.moveRight(rotatedRight);
+        let { board, score } = this.moveRight(rotatedRight);
         board = this.rotateLeft(board);
 
         return { board, score };
@@ -105,25 +111,25 @@ export class Board extends React.Component {
         let board = [];
         let score = 0;
 
-        for (let r = 0; r < inputBoard.length; r++) {
+        for (let i = 0; i < inputBoard.length; i++) {
             let row = [];
 
-            for (let c = 0; c < inputBoard[r].length; c++) {
-                let current = inputBoard[r][c];
+            for (let j = 0; j < inputBoard[i].length; j++) {
+                let current = inputBoard[i][j];
                 (current === 0) ? row.unshift(current) : row.push(current);
             }
             board.push(row);
         }
 
-        for (let r = 0; r < board.length; r++) {
-            for (let c = board[r].length - 1; c >= 0; c--) {
-                if (board[r][c] > 0 && board[r][c] === board[r][c - 1]) {
-                    board[r][c] = board[r][c] * 2;
-                    board[r][c - 1] = 0;
-                    score += board[r][c];
-                } else if (board[r][c] === 0 && board[r][c - 1] > 0) {
-                    board[r][c] = board[r][c - 1];
-                    board[r][c - 1] = 0;
+        for (let i = 0; i < board.length; i++) {
+            for (let j = board[i].length - 1; j >= 0; j--) {
+                if (board[i][j] > 0 && board[i][j] === board[i][j - 1]) {
+                    board[i][j] = board[i][j] * 2;
+                    board[i][j - 1] = 0;
+                    score += board[i][j];
+                } else if (board[i][j] === 0 && board[i][j - 1] > 0) {
+                    board[i][j] = board[i][j - 1];
+                    board[i][j - 1] = 0;
                 }
             }
         }
@@ -133,31 +139,7 @@ export class Board extends React.Component {
 
     moveDown(inputBoard) {
         let rotatedRight = this.rotateRight(inputBoard);
-        let board = [];
-        let score = 0;
-
-        for (let r = 0; r < rotatedRight.length; r++) {
-            let row = [];
-            for (let c = rotatedRight[r].length - 1; c >= 0; c--) {
-                let current = rotatedRight[r][c];
-                (current === 0) ? row.push(current) : row.unshift(current);
-            }
-            board.push(row);
-        }
-
-        for (let r = 0; r < board.length; r++) {
-            for (let c = 0; c < board.length; c++) {
-                if (board[r][c] > 0 && board[r][c] === board[r][c + 1]) {
-                    board[r][c] = board[r][c] * 2;
-                    board[r][c + 1] = 0;
-                    score += board[r][c];
-                } else if (board[r][c] === 0 && board[r][c + 1] > 0) {
-                    board[r][c] = board[r][c + 1];
-                    board[r][c + 1] = 0;
-                }
-            }
-        }
-
+        let { board, score } = this.moveLeft(rotatedRight);
         board = this.rotateLeft(board);
 
         return { board, score };
@@ -238,12 +220,6 @@ export class Board extends React.Component {
     }
 
     handleKeyDown(e) {
-        const up = 38;
-        const right = 39;
-        const down = 40;
-        const left = 37
-        const n = 78;
-
         if (e.keyCode === up) {
             this.move('up');
         } else if (e.keyCode === right) {
@@ -258,6 +234,8 @@ export class Board extends React.Component {
     }
 
     render() {
-        return renderBoard(this.state.board, this.state.score, this.state.message);
+        const { board, score, message } = this.state;
+
+        return renderBoard(board, score, message);
     }
 };

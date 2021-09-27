@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { lighten, makeStyles } from '@material-ui/core/styles';
@@ -19,7 +19,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 import DeleteIcon from '@material-ui/icons/Delete';
-import FilterListIcon from '@material-ui/icons/FilterList';    
+import FilterListIcon from '@material-ui/icons/FilterList';
 
 function addRow(name, score) {
     return { name, score };
@@ -138,9 +138,9 @@ const EnhancedTableToolbar = (props) => {
                 [classes.highlight]: numSelected > 0,
             })}
         >
-                <Typography className={classes.title} variant="h6" id="tableTitle" component="div">
-                    Scoreboard
-                </Typography>
+            <Typography className={classes.title} variant="h6" id="tableTitle" component="div">
+                Scoreboard
+            </Typography>
         </Toolbar>
     );
 };
@@ -182,11 +182,13 @@ export default function Scoreboard(props) {
     const [dense, setDense] = React.useState(false);
     const [rowsPerPage, setRowsPerPage] = React.useState(5);
 
-    if(props.username) {
-        rows.push(addRow(props.username, props.score));
-        props.setUsername(false);
-        props.setScore(0);
-    }
+    useEffect(() => {
+        if (props.username) {
+            rows.push(addRow(props.username, props.score));
+            props.setUsername(false);
+            props.setScore(0);
+        }
+    }, [props.username]);
 
     const handleRequestSort = (event, property) => {
         const isAsc = orderBy === property && order === 'asc';
@@ -239,7 +241,7 @@ export default function Scoreboard(props) {
     const isSelected = (name) => selected.indexOf(name) !== -1;
 
     const emptyRows = rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
-    
+
     return (
         <div className={classes.root}>
             <Paper className={classes.paper}>
@@ -255,7 +257,7 @@ export default function Scoreboard(props) {
                             classes={classes}
                             numSelected={selected.length}
                             order={order}
-                            orderBy={orderBy} 
+                            orderBy={orderBy}
                             onRequestSort={handleRequestSort}
                             rowCount={rows.length}
                         />

@@ -8,7 +8,7 @@ export function renderBoard(board, score, message) {
             <table border="1px solid black" border-collapse="collapse">
                 {board.map((row, i) => (<Row key={i} row={row} />))}
             </table>
-            <GameOver/>
+            <div>{message}</div>
         </div>
     );
 }
@@ -31,8 +31,13 @@ const Cell = ({ cellValue }) => {
     );
 };
 
-function GameOver() {
- return (
-     <div/>
- );
-}
+var color = function(value) {
+    if(!value){
+        return "white";
+    }
+    var blue = Math.round(Math.log2(value) * 3 + 200);
+    var green =  Math.round(Math.log2(value)  * 3 + 200);
+    var red =  Math.round(Math.log2(value) * 3 + 200);
+  
+    return "RGB(" + red + ", " + green + ", " + blue + ")";
+  }
