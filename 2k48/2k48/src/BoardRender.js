@@ -25,8 +25,8 @@ const Cell = ({ cellValue }) => {
     let value = (cellValue === 0) ? '' : cellValue;
 
     return (
-        <td border="1px solid black" border-collapse="collapse" width="50" height="50" align="center">
-            <div >{value}</div>
+        <td border="1px solid black" border-collapse="collapse" width="50" height="50" align="center" style={{backgroundColor: color(cellValue)}}>
+            <div>{value}</div>
         </td>
     );
 };
@@ -35,9 +35,9 @@ var color = function(value) {
     if(!value){
         return "white";
     }
-    var blue = Math.round(Math.log2(value) * 3 + 200);
-    var green =  Math.round(Math.log2(value)  * 3 + 200);
-    var red =  Math.round(Math.log2(value) * 3 + 200);
+    var blue = ((Math.log2(value) + 1) % 2) * 128;
+    var green =  (Math.log2(value) * 40 + 100) % 256;
+    var red =  (Math.log2(value) % 2) * 128;
   
-    return "RGB(" + red + ", " + green + ", " + blue + ")";
+    return "rgb(" + red + ", " + green + ", " + blue + ")";
   }

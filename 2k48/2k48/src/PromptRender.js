@@ -10,8 +10,10 @@ export default function Prompt(props) {
   }, [props.finalScore]);
 
   function Close() {
-    setOpen(false);
-    props.username(document.getElementById("username").value);
+    if(document.getElementById("username").value.replaceAll(' ','')){
+      setOpen(false);
+      props.username(document.getElementById("username").value);
+    }
   }
   return (
     <div>

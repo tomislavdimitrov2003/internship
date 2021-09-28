@@ -25,11 +25,19 @@ function addRow(name, score) {
     return { name, score };
 }
 
-const rows = [
-    addRow("asdf", 300),
-    addRow("qwef", 400),
-    addRow("zxcv", 500)
-];
+let rows = getAllStorage();
+
+function getAllStorage() {
+    var values = [],
+        keys = Object.keys(localStorage),
+        i = keys.length;
+
+    while ( i-- ) {
+        values.push(addRow(keys[i], parseInt(localStorage.getItem(keys[i]))));
+    }
+
+    return values;
+}
 
 function descendingComparator(a, b, orderBy) {
     if (b[orderBy] < a[orderBy]) {
@@ -64,7 +72,7 @@ const headCells = [
 ];
 
 function EnhancedTableHead(props) {
-    const { classes, onSelectAllClick, order, orderBy, numSelected, rowCount, onRequestSort } = props;
+    const { classes, order, orderBy, onRequestSort } = props;
     const createSortHandler = (property) => (event) => {
         onRequestSort(event, property);
     };
@@ -184,7 +192,8 @@ export default function Scoreboard(props) {
 
     useEffect(() => {
         if (props.username) {
-            rows.push(addRow(props.username, props.score));
+            localStorage.setItem(props.username, props.score);
+            rows=getAllStorage();
             props.setUsername(false);
             props.setScore(0);
         }
@@ -194,35 +203,6 @@ export default function Scoreboard(props) {
         const isAsc = orderBy === property && order === 'asc';
         setOrder(isAsc ? 'desc' : 'asc');
         setOrderBy(property);
-    };
-
-    const handleSelectAllClick = (event) => {
-        if (event.target.checked) {
-            const newSelecteds = rows.map((n) => n.name);
-            setSelected(newSelecteds);
-            return;
-        }
-        setSelected([]);
-    };
-
-    const handleClick = (event, name) => {
-        const selectedIndex = selected.indexOf(name);
-        let newSelected = [];
-
-        if (selectedIndex === -1) {
-            newSelected = newSelected.concat(selected, name);
-        } else if (selectedIndex === 0) {
-            newSelected = newSelected.concat(selected.slice(1));
-        } else if (selectedIndex === selected.length - 1) {
-            newSelected = newSelected.concat(selected.slice(0, -1));
-        } else if (selectedIndex > 0) {
-            newSelected = newSelected.concat(
-                selected.slice(0, selectedIndex),
-                selected.slice(selectedIndex + 1),
-            );
-        }
-
-        setSelected(newSelected);
     };
 
     const handleChangePage = (event, newPage) => {
@@ -237,8 +217,6 @@ export default function Scoreboard(props) {
     const handleChangeDense = (event) => {
         setDense(event.target.checked);
     };
-
-    const isSelected = (name) => selected.indexOf(name) !== -1;
 
     const emptyRows = rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
 
@@ -265,18 +243,13 @@ export default function Scoreboard(props) {
                             {stableSort(rows, getComparator(order, orderBy))
                                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                                 .map((row, index) => {
-                                    const isItemSelected = isSelected(row.name);
                                     const labelId = `enhanced-table-checkbox-${index}`;
 
                                     return (
                                         <TableRow
-                                            hover
-                                            onClick={(event) => handleClick(event, row.name)}
                                             role="checkbox"
-                                            aria-checked={isItemSelected}
                                             tabIndex={-1}
                                             key={row.name}
-                                            selected={isItemSelected}
                                         >
                                             <TableCell padding="checkbox">
                                             </TableCell>
