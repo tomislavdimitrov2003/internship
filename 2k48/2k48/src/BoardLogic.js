@@ -18,7 +18,6 @@ export class Board extends React.Component {
         this.state = {
             board: new Array(this.size).fill(0).map(() => new Array(this.size).fill(0)),
             score: 0,
-            scoreboard: null,
             size: 4,
             gameOver: false,
             message: ""
@@ -129,6 +128,12 @@ export class Board extends React.Component {
                     board[i][j] = board[i][j] * 2;
                     board[i][j - 1] = 0;
                     score += board[i][j];
+
+                    for (let k = j - 2; k >= 0; k--) {
+                        board[i][k + 1] = board[i][k];
+                    }
+
+                    board[i][0] = 0;
                 } else if (board[i][j] === 0 && board[i][j - 1] > 0) {
                     board[i][j] = board[i][j - 1];
                     board[i][j - 1] = 0;
@@ -167,6 +172,12 @@ export class Board extends React.Component {
                     board[r][c] = board[r][c] * 2;
                     board[r][c + 1] = 0;
                     score += board[r][c];
+                    
+                    for (let i = c + 2; i < board.length - 1; i++) {
+                        board[r][i - 1] = board[r][i];
+                    }
+
+                    board[r][board.length - 1] = 0;
                 } else if (board[r][c] === 0 && board[r][c + 1] > 0) {
                     board[r][c] = board[r][c + 1];
                     board[r][c + 1] = 0;
