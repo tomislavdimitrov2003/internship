@@ -1,5 +1,5 @@
-export const up = 38;
-export const right = 39;
-export const down = 40;
-export const left = 37;
-export const n = 78;
+export const UP = 38;
+export const RIGHT = 39;
+export const DOWN = 40;
+export const LEFT = 37;
+export const N = 78;

@@ -9,7 +9,7 @@ import Paper from "@material-ui/core/Paper";
 import { makeStyles } from '@material-ui/core/styles';
 import { deepPurple } from '@material-ui/core/colors';
 import { renderBoard } from './BoardRender';
-import { down, left, n, right, up } from './KeyCodes';
+import { DOWN, LEFT, RIGHT, UP, N } from './KeyCodes';
 
 
 export class Board extends React.Component {
@@ -92,9 +92,10 @@ export class Board extends React.Component {
                 if (this.props.onGameOver) {
                     this.props.onGameOver(this.state.score);
                 }
+
                 this.setState({ board: boardWithRandom, gameOver: true, message: 'Game over!' });
             } else {
-                this.setState({ board: boardWithRandom, score: this.state.score += movedBoard.score });
+                this.setState({ board: boardWithRandom, score: this.state.score + movedBoard.score });
             }
         }
     }
@@ -115,6 +116,7 @@ export class Board extends React.Component {
             let row = [];
 
             for (let j = 0; j < inputBoard[i].length; j++) {
+
                 let current = inputBoard[i][j];
                 (current === 0) ? row.unshift(current) : row.push(current);
             }
@@ -122,7 +124,7 @@ export class Board extends React.Component {
         }
 
         for (let i = 0; i < board.length; i++) {
-            for (let j = board[i].length - 1; j >= 0; j--) {
+            for (let j = board[i].length - 1; j > 0; j--) {
                 if (board[i][j] > 0 && board[i][j] === board[i][j - 1]) {
                     board[i][j] = board[i][j] * 2;
                     board[i][j - 1] = 0;
@@ -151,6 +153,7 @@ export class Board extends React.Component {
 
         for (let r = 0; r < inputBoard.length; r++) {
             let row = [];
+
             for (let c = inputBoard[r].length - 1; c >= 0; c--) {
                 let current = inputBoard[r][c];
                 (current === 0) ? row.push(current) : row.unshift(current);
@@ -159,7 +162,7 @@ export class Board extends React.Component {
         }
 
         for (let r = 0; r < board.length; r++) {
-            for (let c = 0; c < board.length; c++) {
+            for (let c = 0; c < board.length - 1; c++) {
                 if (board[r][c] > 0 && board[r][c] === board[r][c + 1]) {
                     board[r][c] = board[r][c] * 2;
                     board[r][c + 1] = 0;
@@ -210,7 +213,7 @@ export class Board extends React.Component {
             this.boardMoved(board, this.moveLeft(board).board)
         ];
 
-        return !moves.includes(true);
+        return moves.every(move => move === false);
     }
 
     componentDidMount() {
@@ -220,15 +223,15 @@ export class Board extends React.Component {
     }
 
     handleKeyDown(e) {
-        if (e.keyCode === up) {
+        if (e.keyCode === UP) {
             this.move('up');
-        } else if (e.keyCode === right) {
+        } else if (e.keyCode === RIGHT) {
             this.move('right');
-        } else if (e.keyCode === down) {
+        } else if (e.keyCode === DOWN) {
             this.move('down');
-        } else if (e.keyCode === left) {
+        } else if (e.keyCode === LEFT) {
             this.move('left');
-        } else if (e.keyCode === n) {
+        } else if (e.keyCode === N) {
             this.initBoard();
         }
     }

@@ -25,7 +25,13 @@ const Cell = ({ cellValue }) => {
     let value = (cellValue === 0) ? '' : cellValue;
 
     return (
-        <td border="1px solid black" border-collapse="collapse" width="50" height="50" align="center" style={{backgroundColor: color(cellValue)}}>
+        <td 
+        border="1px solid black" 
+        border-collapse="collapse" 
+        width="50" 
+        height="50" 
+        align="center" 
+        style={{backgroundColor: color(cellValue)}}>
             <div>{value}</div>
         </td>
     );
