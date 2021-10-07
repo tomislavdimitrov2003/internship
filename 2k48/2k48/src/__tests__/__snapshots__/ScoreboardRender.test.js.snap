@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders scoreboard correctly 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(Paper))
+    className="makeStyles-paper-2"
+  >
+    <EnhancedTableToolbar
+      numSelected={0}
+    />
+    <WithStyles(ForwardRef(TableContainer))>
+      <WithStyles(ForwardRef(Table))
+        aria-label="enhanced table"
+        aria-labelledby="tableTitle"
+        className="makeStyles-table-3"
+        size="medium"
+      >
+        <EnhancedTableHead
+          classes={
+            Object {
+              "paper": "makeStyles-paper-2",
+              "root": "makeStyles-root-1",
+              "table": "makeStyles-table-3",
+              "visuallyHidden": "makeStyles-visuallyHidden-4",
+            }
+          }
+          numSelected={0}
+          onRequestSort={[Function]}
+          order="desc"
+          orderBy="score"
+          rowCount={2}
+        />
+        <WithStyles(ForwardRef(TableBody))>
+          <WithStyles(ForwardRef(TableRow))
+            role="checkbox"
+            tabIndex={-1}
+          >
+            <WithStyles(ForwardRef(TableCell))
+              padding="checkbox"
+            />
+            <WithStyles(ForwardRef(TableCell))
+              component="th"
+              id="enhanced-table-checkbox-0"
+              padding="none"
+              scope="row"
+            />
+            <WithStyles(ForwardRef(TableCell))
+              align="right"
+            />
+          </WithStyles(ForwardRef(TableRow))>
+          <WithStyles(ForwardRef(TableRow))
+            role="checkbox"
+            tabIndex={-1}
+          >
+            <WithStyles(ForwardRef(TableCell))
+              padding="checkbox"
+            />
+            <WithStyles(ForwardRef(TableCell))
+              component="th"
+              id="enhanced-table-checkbox-1"
+              padding="none"
+              scope="row"
+            />
+            <WithStyles(ForwardRef(TableCell))
+              align="right"
+            />
+          </WithStyles(ForwardRef(TableRow))>
+          <WithStyles(ForwardRef(TableRow))
+            style={
+              Object {
+                "height": 159,
+              }
+            }
+          >
+            <WithStyles(ForwardRef(TableCell))
+              colSpan={6}
+            />
+          </WithStyles(ForwardRef(TableRow))>
+        </WithStyles(ForwardRef(TableBody))>
+      </WithStyles(ForwardRef(Table))>
+    </WithStyles(ForwardRef(TableContainer))>
+    <WithStyles(ForwardRef(TablePagination))
+      component="div"
+      count={2}
+      onPageChange={[Function]}
+      onRowsPerPageChange={[Function]}
+      page={0}
+      rowsPerPage={5}
+      rowsPerPageOptions={
+        Array [
+          5,
+          10,
+          25,
+        ]
+      }
+    />
+  </WithStyles(ForwardRef(Paper))>
+  <WithStyles(ForwardRef(FormControlLabel))
+    control={
+      <WithStyles(ForwardRef(Switch))
+        checked={false}
+        onChange={[Function]}
+      />
+    }
+    label="Dense padding"
+  />
+</div>
+`;

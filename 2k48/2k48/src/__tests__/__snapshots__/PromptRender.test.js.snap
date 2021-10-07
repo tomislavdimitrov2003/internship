@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders propmt correctly 1`] = `
+<div>
+  <WithStyles(ForwardRef(Dialog))
+    onClose={false}
+    open={false}
+  >
+    <WithStyles(ForwardRef(DialogTitle))>
+      Game Over
+    </WithStyles(ForwardRef(DialogTitle))>
+    <WithStyles(ForwardRef(DialogContent))>
+      <WithStyles(ForwardRef(DialogContentText))>
+        You Finished with score of 
+        1000
+        !
+      </WithStyles(ForwardRef(DialogContentText))>
+      <WithStyles(ForwardRef(TextField))
+        autoFocus={true}
+        fullWidth={true}
+        id="username"
+        label="Username"
+        margin="dense"
+        type="username"
+        variant="standard"
+      />
+    </WithStyles(ForwardRef(DialogContent))>
+    <WithStyles(ForwardRef(DialogActions))>
+      <WithStyles(ForwardRef(Button))
+        onClick={[Function]}
+      >
+        Submit
+      </WithStyles(ForwardRef(Button))>
+    </WithStyles(ForwardRef(DialogActions))>
+  </WithStyles(ForwardRef(Dialog))>
+</div>
+`;
