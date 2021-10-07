@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Close } from '@material-ui/icons';
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField } from '@material-ui/core';
 
 export default function Prompt(props) {
@@ -10,7 +9,7 @@ export default function Prompt(props) {
   }, [props.finalScore]);
 
   function Close() {
-    if(document.getElementById("username").value.replaceAll(' ','')){
+    if (document.getElementById("username").value.replaceAll(' ','')) {
       setOpen(false);
       props.username(document.getElementById("username").value);
     }

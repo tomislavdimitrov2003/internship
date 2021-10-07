@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export function renderBoard(board, score, message) {
+export function RenderBoard(board, score, message) {
     return (
         <div>
             <div className="score">Score: {score}</div>

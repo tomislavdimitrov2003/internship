@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Grid from '@material-ui/core/Grid';
 import { Board } from './BoardLogic';
 import { TextField } from '@material-ui/core';
-import Scoreboard from './Scoreboard';
+import Scoreboard from './ScoreboardLogic';
 import Prompt from './PromptRender';
 import { ResizeButtons } from './ResizeButtonsRender';
 
@@ -23,7 +23,7 @@ export function App() {
           <Prompt username={setUsername} finalScore={finalScore} />
         </Grid>
         <Grid item xs={3}>
-          <Scoreboard score={finalScore} setScore={setFinalScore} username={username} setUsername={setUsername} />
+          <Scoreboard score={finalScore} setScore={setFinalScore} username={username} setUsername={setUsername}/>
         </Grid>
       </Grid>
     </div>
