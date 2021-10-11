@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField } from '@material-ui/core';
 
 export default function Prompt(props) {
@@ -9,14 +9,14 @@ export default function Prompt(props) {
   }, [props.finalScore]);
 
   function Close() {
-    if (document.getElementById("username").value.replaceAll(' ','')) {
+    if (document.getElementById("username").value.replaceAll(' ', '')) {
       setOpen(false);
       props.username(document.getElementById("username").value);
     }
   }
   return (
     <div>
-      <Dialog open={open} onClose={open = false}>
+      <Dialog open={open} onClose={() => { open = false }}>
         <DialogTitle>Game Over</DialogTitle>
         <DialogContent>
           <DialogContentText>

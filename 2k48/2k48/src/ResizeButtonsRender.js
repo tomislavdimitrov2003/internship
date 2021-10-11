@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function ResizeButtons (props) {
+export function ResizeButtons(props) {
     return (
         <div>
             <button className="resize4" type="button" onClick={() => props.setCurrentSize(4)}>4x4</button>

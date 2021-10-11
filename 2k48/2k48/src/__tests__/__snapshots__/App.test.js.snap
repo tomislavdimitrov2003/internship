@@ -549,7 +549,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                         row={
                           Array [
                             0,
-                            2,
+                            0,
                             0,
                             0,
                           ]
@@ -576,7 +576,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                             </td>
                           </Cell>
                           <Cell
-                            cellValue={2}
+                            cellValue={0}
                             key="1"
                           >
                             <td
@@ -586,14 +586,12 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                               height="50"
                               style={
                                 Object {
-                                  "backgroundColor": "rgb(128, 140, 0)",
+                                  "backgroundColor": "white",
                                 }
                               }
                               width="50"
                             >
-                              <div>
-                                2
-                              </div>
+                              <div />
                             </td>
                           </Cell>
                           <Cell
@@ -640,7 +638,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                         key="2"
                         row={
                           Array [
-                            0,
+                            2,
                             0,
                             0,
                             0,
@@ -649,7 +647,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                       >
                         <tr>
                           <Cell
-                            cellValue={0}
+                            cellValue={2}
                             key="0"
                           >
                             <td
@@ -659,12 +657,14 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                               height="50"
                               style={
                                 Object {
-                                  "backgroundColor": "white",
+                                  "backgroundColor": "rgb(128, 140, 0)",
                                 }
                               }
                               width="50"
                             >
-                              <div />
+                              <div>
+                                2
+                              </div>
                             </td>
                           </Cell>
                           <Cell
@@ -730,7 +730,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                         key="3"
                         row={
                           Array [
-                            2,
+                            4,
                             0,
                             0,
                             0,
@@ -739,7 +739,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                       >
                         <tr>
                           <Cell
-                            cellValue={2}
+                            cellValue={4}
                             key="0"
                           >
                             <td
@@ -749,13 +749,13 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                               height="50"
                               style={
                                 Object {
-                                  "backgroundColor": "rgb(128, 140, 0)",
+                                  "backgroundColor": "rgb(0, 180, 128)",
                                 }
                               }
                               width="50"
                             >
                               <div>
-                                2
+                                4
                               </div>
                             </td>
                           </Cell>
@@ -1552,12 +1552,14 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                           >
                                                             <WithStyles(ForwardRef(TableSortLabel))
                                                               active={false}
+                                                              className="nameHead"
                                                               direction="asc"
                                                               key="name"
                                                               onClick={[Function]}
                                                             >
                                                               <ForwardRef(TableSortLabel)
                                                                 active={false}
+                                                                className="nameHead"
                                                                 classes={
                                                                   Object {
                                                                     "active": "MuiTableSortLabel-active",
@@ -1571,13 +1573,13 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                                 onClick={[Function]}
                                                               >
                                                                 <WithStyles(ForwardRef(ButtonBase))
-                                                                  className="MuiTableSortLabel-root"
+                                                                  className="MuiTableSortLabel-root nameHead"
                                                                   component="span"
                                                                   disableRipple={true}
                                                                   onClick={[Function]}
                                                                 >
                                                                   <ForwardRef(ButtonBase)
-                                                                    className="MuiTableSortLabel-root"
+                                                                    className="MuiTableSortLabel-root nameHead"
                                                                     classes={
                                                                       Object {
                                                                         "disabled": "Mui-disabled",
@@ -1591,7 +1593,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                                   >
                                                                     <span
                                                                       aria-disabled={false}
-                                                                      className="MuiButtonBase-root MuiTableSortLabel-root"
+                                                                      className="MuiButtonBase-root MuiTableSortLabel-root nameHead"
                                                                       onBlur={[Function]}
                                                                       onClick={[Function]}
                                                                       onDragLeave={[Function]}
@@ -1685,12 +1687,14 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                           >
                                                             <WithStyles(ForwardRef(TableSortLabel))
                                                               active={true}
+                                                              className="scoreHead"
                                                               direction="desc"
                                                               key="score"
                                                               onClick={[Function]}
                                                             >
                                                               <ForwardRef(TableSortLabel)
                                                                 active={true}
+                                                                className="scoreHead"
                                                                 classes={
                                                                   Object {
                                                                     "active": "MuiTableSortLabel-active",
@@ -1704,13 +1708,13 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                                 onClick={[Function]}
                                                               >
                                                                 <WithStyles(ForwardRef(ButtonBase))
-                                                                  className="MuiTableSortLabel-root MuiTableSortLabel-active"
+                                                                  className="MuiTableSortLabel-root scoreHead MuiTableSortLabel-active"
                                                                   component="span"
                                                                   disableRipple={true}
                                                                   onClick={[Function]}
                                                                 >
                                                                   <ForwardRef(ButtonBase)
-                                                                    className="MuiTableSortLabel-root MuiTableSortLabel-active"
+                                                                    className="MuiTableSortLabel-root scoreHead MuiTableSortLabel-active"
                                                                     classes={
                                                                       Object {
                                                                         "disabled": "Mui-disabled",
@@ -1724,7 +1728,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                                   >
                                                                     <span
                                                                       aria-disabled={false}
-                                                                      className="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-active"
+                                                                      className="MuiButtonBase-root MuiTableSortLabel-root scoreHead MuiTableSortLabel-active"
                                                                       onBlur={[Function]}
                                                                       onClick={[Function]}
                                                                       onDragLeave={[Function]}
@@ -1951,7 +1955,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                         <WithStyles(ForwardRef(Typography))
                                           className="MuiTablePagination-caption"
                                           color="inherit"
-                                          id="mui-39534"
+                                          id="mui-76362"
                                           variant="body2"
                                         >
                                           <ForwardRef(Typography)
@@ -1991,12 +1995,12 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                               }
                                             }
                                             color="inherit"
-                                            id="mui-39534"
+                                            id="mui-76362"
                                             variant="body2"
                                           >
                                             <p
                                               className="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
-                                              id="mui-39534"
+                                              id="mui-76362"
                                             >
                                               Rows per page:
                                             </p>
@@ -2009,13 +2013,13 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                               "select": "MuiTablePagination-select",
                                             }
                                           }
-                                          id="mui-59554"
+                                          id="mui-91996"
                                           input={
                                             <WithStyles(ForwardRef(InputBase))
                                               className="MuiTablePagination-input MuiTablePagination-selectRoot"
                                             />
                                           }
-                                          labelId="mui-39534"
+                                          labelId="mui-76362"
                                           onChange={[Function]}
                                           value={5}
                                         >
@@ -2035,13 +2039,13 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                 "selectMenu": "MuiSelect-selectMenu",
                                               }
                                             }
-                                            id="mui-59554"
+                                            id="mui-91996"
                                             input={
                                               <WithStyles(ForwardRef(InputBase))
                                                 className="MuiTablePagination-input MuiTablePagination-selectRoot"
                                               />
                                             }
-                                            labelId="mui-39534"
+                                            labelId="mui-76362"
                                             onChange={[Function]}
                                             value={5}
                                           >
@@ -2095,7 +2099,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                   },
                                                   "MenuProps": undefined,
                                                   "SelectDisplayProps": Object {
-                                                    "id": "mui-59554",
+                                                    "id": "mui-91996",
                                                   },
                                                   "autoWidth": false,
                                                   "children": Array [
@@ -2132,7 +2136,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                     "selectMenu": "MuiSelect-selectMenu",
                                                   },
                                                   "displayEmpty": false,
-                                                  "labelId": "mui-39534",
+                                                  "labelId": "mui-76362",
                                                   "multiple": false,
                                                   "onClose": undefined,
                                                   "onOpen": undefined,
@@ -2217,7 +2221,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                     },
                                                     "MenuProps": undefined,
                                                     "SelectDisplayProps": Object {
-                                                      "id": "mui-59554",
+                                                      "id": "mui-91996",
                                                     },
                                                     "autoWidth": false,
                                                     "children": Array [
@@ -2254,7 +2258,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                       "selectMenu": "MuiSelect-selectMenu",
                                                     },
                                                     "displayEmpty": false,
-                                                    "labelId": "mui-39534",
+                                                    "labelId": "mui-76362",
                                                     "multiple": false,
                                                     "onClose": undefined,
                                                     "onOpen": undefined,
@@ -2284,7 +2288,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                     }
                                                     SelectDisplayProps={
                                                       Object {
-                                                        "id": "mui-59554",
+                                                        "id": "mui-91996",
                                                       }
                                                     }
                                                     autoWidth={false}
@@ -2306,7 +2310,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                     }
                                                     displayEmpty={false}
                                                     inputRef={[Function]}
-                                                    labelId="mui-39534"
+                                                    labelId="mui-76362"
                                                     multiple={false}
                                                     onAnimationStart={[Function]}
                                                     onBlur={[Function]}
@@ -2317,9 +2321,9 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                   >
                                                     <div
                                                       aria-haspopup="listbox"
-                                                      aria-labelledby="mui-39534 mui-59554"
+                                                      aria-labelledby="mui-76362 mui-91996"
                                                       className="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                      id="mui-59554"
+                                                      id="mui-91996"
                                                       onBlur={[Function]}
                                                       onFocus={[Function]}
                                                       onKeyDown={[Function]}
@@ -2375,7 +2379,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                     <WithStyles(ForwardRef(Menu))
                                                       MenuListProps={
                                                         Object {
-                                                          "aria-labelledby": "mui-39534",
+                                                          "aria-labelledby": "mui-76362",
                                                           "disableListWrap": true,
                                                           "role": "listbox",
                                                         }
@@ -2390,9 +2394,9 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                       anchorEl={
                                                         <div
                                                           aria-haspopup="listbox"
-                                                          aria-labelledby="mui-39534 mui-59554"
+                                                          aria-labelledby="mui-76362 mui-91996"
                                                           class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                          id="mui-59554"
+                                                          id="mui-91996"
                                                           role="button"
                                                           tabindex="0"
                                                         >
@@ -2406,7 +2410,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                       <ForwardRef(Menu)
                                                         MenuListProps={
                                                           Object {
-                                                            "aria-labelledby": "mui-39534",
+                                                            "aria-labelledby": "mui-76362",
                                                             "disableListWrap": true,
                                                             "role": "listbox",
                                                           }
@@ -2421,9 +2425,9 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                         anchorEl={
                                                           <div
                                                             aria-haspopup="listbox"
-                                                            aria-labelledby="mui-39534 mui-59554"
+                                                            aria-labelledby="mui-76362 mui-91996"
                                                             class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                            id="mui-59554"
+                                                            id="mui-91996"
                                                             role="button"
                                                             tabindex="0"
                                                           >
@@ -2459,9 +2463,9 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                           anchorEl={
                                                             <div
                                                               aria-haspopup="listbox"
-                                                              aria-labelledby="mui-39534 mui-59554"
+                                                              aria-labelledby="mui-76362 mui-91996"
                                                               class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                              id="mui-59554"
+                                                              id="mui-91996"
                                                               role="button"
                                                               tabindex="0"
                                                             >
@@ -2505,9 +2509,9 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                             anchorEl={
                                                               <div
                                                                 aria-haspopup="listbox"
-                                                                aria-labelledby="mui-39534 mui-59554"
+                                                                aria-labelledby="mui-76362 mui-91996"
                                                                 class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                                id="mui-59554"
+                                                                id="mui-91996"
                                                                 role="button"
                                                                 tabindex="0"
                                                               >
@@ -3572,10 +3576,10 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                         row={
                           Array [
                             0,
-                            2,
                             0,
                             0,
-                            2,
+                            0,
+                            4,
                           ]
                         }
                       >
@@ -3600,7 +3604,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                             </td>
                           </Cell>
                           <Cell
-                            cellValue={2}
+                            cellValue={0}
                             key="1"
                           >
                             <td
@@ -3610,14 +3614,12 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                               height="50"
                               style={
                                 Object {
-                                  "backgroundColor": "rgb(128, 140, 0)",
+                                  "backgroundColor": "white",
                                 }
                               }
                               width="50"
                             >
-                              <div>
-                                2
-                              </div>
+                              <div />
                             </td>
                           </Cell>
                           <Cell
@@ -3659,7 +3661,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                             </td>
                           </Cell>
                           <Cell
-                            cellValue={2}
+                            cellValue={4}
                             key="4"
                           >
                             <td
@@ -3669,13 +3671,13 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                               height="50"
                               style={
                                 Object {
-                                  "backgroundColor": "rgb(128, 140, 0)",
+                                  "backgroundColor": "rgb(0, 180, 128)",
                                 }
                               }
                               width="50"
                             >
                               <div>
-                                2
+                                4
                               </div>
                             </td>
                           </Cell>
@@ -3686,7 +3688,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                         row={
                           Array [
                             0,
-                            0,
+                            2,
                             0,
                             0,
                             0,
@@ -3714,7 +3716,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                             </td>
                           </Cell>
                           <Cell
-                            cellValue={0}
+                            cellValue={2}
                             key="1"
                           >
                             <td
@@ -3724,12 +3726,14 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                               height="50"
                               style={
                                 Object {
-                                  "backgroundColor": "white",
+                                  "backgroundColor": "rgb(128, 140, 0)",
                                 }
                               }
                               width="50"
                             >
-                              <div />
+                              <div>
+                                2
+                              </div>
                             </td>
                           </Cell>
                           <Cell
@@ -4855,12 +4859,14 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                           >
                                                             <WithStyles(ForwardRef(TableSortLabel))
                                                               active={false}
+                                                              className="nameHead"
                                                               direction="asc"
                                                               key="name"
                                                               onClick={[Function]}
                                                             >
                                                               <ForwardRef(TableSortLabel)
                                                                 active={false}
+                                                                className="nameHead"
                                                                 classes={
                                                                   Object {
                                                                     "active": "MuiTableSortLabel-active",
@@ -4874,13 +4880,13 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                                 onClick={[Function]}
                                                               >
                                                                 <WithStyles(ForwardRef(ButtonBase))
-                                                                  className="MuiTableSortLabel-root"
+                                                                  className="MuiTableSortLabel-root nameHead"
                                                                   component="span"
                                                                   disableRipple={true}
                                                                   onClick={[Function]}
                                                                 >
                                                                   <ForwardRef(ButtonBase)
-                                                                    className="MuiTableSortLabel-root"
+                                                                    className="MuiTableSortLabel-root nameHead"
                                                                     classes={
                                                                       Object {
                                                                         "disabled": "Mui-disabled",
@@ -4894,7 +4900,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                                   >
                                                                     <span
                                                                       aria-disabled={false}
-                                                                      className="MuiButtonBase-root MuiTableSortLabel-root"
+                                                                      className="MuiButtonBase-root MuiTableSortLabel-root nameHead"
                                                                       onBlur={[Function]}
                                                                       onClick={[Function]}
                                                                       onDragLeave={[Function]}
@@ -4988,12 +4994,14 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                           >
                                                             <WithStyles(ForwardRef(TableSortLabel))
                                                               active={true}
+                                                              className="scoreHead"
                                                               direction="desc"
                                                               key="score"
                                                               onClick={[Function]}
                                                             >
                                                               <ForwardRef(TableSortLabel)
                                                                 active={true}
+                                                                className="scoreHead"
                                                                 classes={
                                                                   Object {
                                                                     "active": "MuiTableSortLabel-active",
@@ -5007,13 +5015,13 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                                 onClick={[Function]}
                                                               >
                                                                 <WithStyles(ForwardRef(ButtonBase))
-                                                                  className="MuiTableSortLabel-root MuiTableSortLabel-active"
+                                                                  className="MuiTableSortLabel-root scoreHead MuiTableSortLabel-active"
                                                                   component="span"
                                                                   disableRipple={true}
                                                                   onClick={[Function]}
                                                                 >
                                                                   <ForwardRef(ButtonBase)
-                                                                    className="MuiTableSortLabel-root MuiTableSortLabel-active"
+                                                                    className="MuiTableSortLabel-root scoreHead MuiTableSortLabel-active"
                                                                     classes={
                                                                       Object {
                                                                         "disabled": "Mui-disabled",
@@ -5027,7 +5035,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                                   >
                                                                     <span
                                                                       aria-disabled={false}
-                                                                      className="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-active"
+                                                                      className="MuiButtonBase-root MuiTableSortLabel-root scoreHead MuiTableSortLabel-active"
                                                                       onBlur={[Function]}
                                                                       onClick={[Function]}
                                                                       onDragLeave={[Function]}
@@ -5254,7 +5262,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                         <WithStyles(ForwardRef(Typography))
                                           className="MuiTablePagination-caption"
                                           color="inherit"
-                                          id="mui-58608"
+                                          id="mui-10987"
                                           variant="body2"
                                         >
                                           <ForwardRef(Typography)
@@ -5294,12 +5302,12 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                               }
                                             }
                                             color="inherit"
-                                            id="mui-58608"
+                                            id="mui-10987"
                                             variant="body2"
                                           >
                                             <p
                                               className="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
-                                              id="mui-58608"
+                                              id="mui-10987"
                                             >
                                               Rows per page:
                                             </p>
@@ -5312,13 +5320,13 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                               "select": "MuiTablePagination-select",
                                             }
                                           }
-                                          id="mui-37453"
+                                          id="mui-84581"
                                           input={
                                             <WithStyles(ForwardRef(InputBase))
                                               className="MuiTablePagination-input MuiTablePagination-selectRoot"
                                             />
                                           }
-                                          labelId="mui-58608"
+                                          labelId="mui-10987"
                                           onChange={[Function]}
                                           value={5}
                                         >
@@ -5338,13 +5346,13 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                 "selectMenu": "MuiSelect-selectMenu",
                                               }
                                             }
-                                            id="mui-37453"
+                                            id="mui-84581"
                                             input={
                                               <WithStyles(ForwardRef(InputBase))
                                                 className="MuiTablePagination-input MuiTablePagination-selectRoot"
                                               />
                                             }
-                                            labelId="mui-58608"
+                                            labelId="mui-10987"
                                             onChange={[Function]}
                                             value={5}
                                           >
@@ -5398,7 +5406,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                   },
                                                   "MenuProps": undefined,
                                                   "SelectDisplayProps": Object {
-                                                    "id": "mui-37453",
+                                                    "id": "mui-84581",
                                                   },
                                                   "autoWidth": false,
                                                   "children": Array [
@@ -5435,7 +5443,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                     "selectMenu": "MuiSelect-selectMenu",
                                                   },
                                                   "displayEmpty": false,
-                                                  "labelId": "mui-58608",
+                                                  "labelId": "mui-10987",
                                                   "multiple": false,
                                                   "onClose": undefined,
                                                   "onOpen": undefined,
@@ -5520,7 +5528,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                     },
                                                     "MenuProps": undefined,
                                                     "SelectDisplayProps": Object {
-                                                      "id": "mui-37453",
+                                                      "id": "mui-84581",
                                                     },
                                                     "autoWidth": false,
                                                     "children": Array [
@@ -5557,7 +5565,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                       "selectMenu": "MuiSelect-selectMenu",
                                                     },
                                                     "displayEmpty": false,
-                                                    "labelId": "mui-58608",
+                                                    "labelId": "mui-10987",
                                                     "multiple": false,
                                                     "onClose": undefined,
                                                     "onOpen": undefined,
@@ -5587,7 +5595,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                     }
                                                     SelectDisplayProps={
                                                       Object {
-                                                        "id": "mui-37453",
+                                                        "id": "mui-84581",
                                                       }
                                                     }
                                                     autoWidth={false}
@@ -5609,7 +5617,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                     }
                                                     displayEmpty={false}
                                                     inputRef={[Function]}
-                                                    labelId="mui-58608"
+                                                    labelId="mui-10987"
                                                     multiple={false}
                                                     onAnimationStart={[Function]}
                                                     onBlur={[Function]}
@@ -5620,9 +5628,9 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                   >
                                                     <div
                                                       aria-haspopup="listbox"
-                                                      aria-labelledby="mui-58608 mui-37453"
+                                                      aria-labelledby="mui-10987 mui-84581"
                                                       className="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                      id="mui-37453"
+                                                      id="mui-84581"
                                                       onBlur={[Function]}
                                                       onFocus={[Function]}
                                                       onKeyDown={[Function]}
@@ -5678,7 +5686,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                     <WithStyles(ForwardRef(Menu))
                                                       MenuListProps={
                                                         Object {
-                                                          "aria-labelledby": "mui-58608",
+                                                          "aria-labelledby": "mui-10987",
                                                           "disableListWrap": true,
                                                           "role": "listbox",
                                                         }
@@ -5693,9 +5701,9 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                       anchorEl={
                                                         <div
                                                           aria-haspopup="listbox"
-                                                          aria-labelledby="mui-58608 mui-37453"
+                                                          aria-labelledby="mui-10987 mui-84581"
                                                           class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                          id="mui-37453"
+                                                          id="mui-84581"
                                                           role="button"
                                                           tabindex="0"
                                                         >
@@ -5709,7 +5717,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                       <ForwardRef(Menu)
                                                         MenuListProps={
                                                           Object {
-                                                            "aria-labelledby": "mui-58608",
+                                                            "aria-labelledby": "mui-10987",
                                                             "disableListWrap": true,
                                                             "role": "listbox",
                                                           }
@@ -5724,9 +5732,9 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                         anchorEl={
                                                           <div
                                                             aria-haspopup="listbox"
-                                                            aria-labelledby="mui-58608 mui-37453"
+                                                            aria-labelledby="mui-10987 mui-84581"
                                                             class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                            id="mui-37453"
+                                                            id="mui-84581"
                                                             role="button"
                                                             tabindex="0"
                                                           >
@@ -5762,9 +5770,9 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                           anchorEl={
                                                             <div
                                                               aria-haspopup="listbox"
-                                                              aria-labelledby="mui-58608 mui-37453"
+                                                              aria-labelledby="mui-10987 mui-84581"
                                                               class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                              id="mui-37453"
+                                                              id="mui-84581"
                                                               role="button"
                                                               tabindex="0"
                                                             >
@@ -5808,9 +5816,9 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                             anchorEl={
                                                               <div
                                                                 aria-haspopup="listbox"
-                                                                aria-labelledby="mui-58608 mui-37453"
+                                                                aria-labelledby="mui-10987 mui-84581"
                                                                 class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                                id="mui-37453"
+                                                                id="mui-84581"
                                                                 role="button"
                                                                 tabindex="0"
                                                               >
@@ -6875,8 +6883,8 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                         row={
                           Array [
                             0,
+                            4,
                             0,
-                            2,
                             0,
                             0,
                             0,
@@ -6904,8 +6912,29 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                             </td>
                           </Cell>
                           <Cell
-                            cellValue={0}
+                            cellValue={4}
                             key="1"
+                          >
+                            <td
+                              align="center"
+                              border="1px solid black"
+                              border-collapse="collapse"
+                              height="50"
+                              style={
+                                Object {
+                                  "backgroundColor": "rgb(0, 180, 128)",
+                                }
+                              }
+                              width="50"
+                            >
+                              <div>
+                                4
+                              </div>
+                            </td>
+                          </Cell>
+                          <Cell
+                            cellValue={0}
+                            key="2"
                           >
                             <td
                               align="center"
@@ -6920,27 +6949,6 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                               width="50"
                             >
                               <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={2}
-                            key="2"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "rgb(128, 140, 0)",
-                                }
-                              }
-                              width="50"
-                            >
-                              <div>
-                                2
-                              </div>
                             </td>
                           </Cell>
                           <Cell
@@ -7007,10 +7015,10 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                         row={
                           Array [
                             0,
-                            2,
                             0,
                             0,
                             0,
+                            4,
                             0,
                           ]
                         }
@@ -7036,7 +7044,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                             </td>
                           </Cell>
                           <Cell
-                            cellValue={2}
+                            cellValue={0}
                             key="1"
                           >
                             <td
@@ -7046,14 +7054,12 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                               height="50"
                               style={
                                 Object {
-                                  "backgroundColor": "rgb(128, 140, 0)",
+                                  "backgroundColor": "white",
                                 }
                               }
                               width="50"
                             >
-                              <div>
-                                2
-                              </div>
+                              <div />
                             </td>
                           </Cell>
                           <Cell
@@ -7095,7 +7101,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                             </td>
                           </Cell>
                           <Cell
-                            cellValue={0}
+                            cellValue={4}
                             key="4"
                           >
                             <td
@@ -7105,12 +7111,14 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                               height="50"
                               style={
                                 Object {
-                                  "backgroundColor": "white",
+                                  "backgroundColor": "rgb(0, 180, 128)",
                                 }
                               }
                               width="50"
                             >
-                              <div />
+                              <div>
+                                4
+                              </div>
                             </td>
                           </Cell>
                           <Cell
@@ -8388,12 +8396,14 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                           >
                                                             <WithStyles(ForwardRef(TableSortLabel))
                                                               active={false}
+                                                              className="nameHead"
                                                               direction="asc"
                                                               key="name"
                                                               onClick={[Function]}
                                                             >
                                                               <ForwardRef(TableSortLabel)
                                                                 active={false}
+                                                                className="nameHead"
                                                                 classes={
                                                                   Object {
                                                                     "active": "MuiTableSortLabel-active",
@@ -8407,13 +8417,13 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                                 onClick={[Function]}
                                                               >
                                                                 <WithStyles(ForwardRef(ButtonBase))
-                                                                  className="MuiTableSortLabel-root"
+                                                                  className="MuiTableSortLabel-root nameHead"
                                                                   component="span"
                                                                   disableRipple={true}
                                                                   onClick={[Function]}
                                                                 >
                                                                   <ForwardRef(ButtonBase)
-                                                                    className="MuiTableSortLabel-root"
+                                                                    className="MuiTableSortLabel-root nameHead"
                                                                     classes={
                                                                       Object {
                                                                         "disabled": "Mui-disabled",
@@ -8427,7 +8437,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                                   >
                                                                     <span
                                                                       aria-disabled={false}
-                                                                      className="MuiButtonBase-root MuiTableSortLabel-root"
+                                                                      className="MuiButtonBase-root MuiTableSortLabel-root nameHead"
                                                                       onBlur={[Function]}
                                                                       onClick={[Function]}
                                                                       onDragLeave={[Function]}
@@ -8521,12 +8531,14 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                           >
                                                             <WithStyles(ForwardRef(TableSortLabel))
                                                               active={true}
+                                                              className="scoreHead"
                                                               direction="desc"
                                                               key="score"
                                                               onClick={[Function]}
                                                             >
                                                               <ForwardRef(TableSortLabel)
                                                                 active={true}
+                                                                className="scoreHead"
                                                                 classes={
                                                                   Object {
                                                                     "active": "MuiTableSortLabel-active",
@@ -8540,13 +8552,13 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                                 onClick={[Function]}
                                                               >
                                                                 <WithStyles(ForwardRef(ButtonBase))
-                                                                  className="MuiTableSortLabel-root MuiTableSortLabel-active"
+                                                                  className="MuiTableSortLabel-root scoreHead MuiTableSortLabel-active"
                                                                   component="span"
                                                                   disableRipple={true}
                                                                   onClick={[Function]}
                                                                 >
                                                                   <ForwardRef(ButtonBase)
-                                                                    className="MuiTableSortLabel-root MuiTableSortLabel-active"
+                                                                    className="MuiTableSortLabel-root scoreHead MuiTableSortLabel-active"
                                                                     classes={
                                                                       Object {
                                                                         "disabled": "Mui-disabled",
@@ -8560,7 +8572,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                                   >
                                                                     <span
                                                                       aria-disabled={false}
-                                                                      className="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-active"
+                                                                      className="MuiButtonBase-root MuiTableSortLabel-root scoreHead MuiTableSortLabel-active"
                                                                       onBlur={[Function]}
                                                                       onClick={[Function]}
                                                                       onDragLeave={[Function]}
@@ -8787,7 +8799,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                         <WithStyles(ForwardRef(Typography))
                                           className="MuiTablePagination-caption"
                                           color="inherit"
-                                          id="mui-27468"
+                                          id="mui-81665"
                                           variant="body2"
                                         >
                                           <ForwardRef(Typography)
@@ -8827,12 +8839,12 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                               }
                                             }
                                             color="inherit"
-                                            id="mui-27468"
+                                            id="mui-81665"
                                             variant="body2"
                                           >
                                             <p
                                               className="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
-                                              id="mui-27468"
+                                              id="mui-81665"
                                             >
                                               Rows per page:
                                             </p>
@@ -8845,13 +8857,13 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                               "select": "MuiTablePagination-select",
                                             }
                                           }
-                                          id="mui-11523"
+                                          id="mui-20040"
                                           input={
                                             <WithStyles(ForwardRef(InputBase))
                                               className="MuiTablePagination-input MuiTablePagination-selectRoot"
                                             />
                                           }
-                                          labelId="mui-27468"
+                                          labelId="mui-81665"
                                           onChange={[Function]}
                                           value={5}
                                         >
@@ -8871,13 +8883,13 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                 "selectMenu": "MuiSelect-selectMenu",
                                               }
                                             }
-                                            id="mui-11523"
+                                            id="mui-20040"
                                             input={
                                               <WithStyles(ForwardRef(InputBase))
                                                 className="MuiTablePagination-input MuiTablePagination-selectRoot"
                                               />
                                             }
-                                            labelId="mui-27468"
+                                            labelId="mui-81665"
                                             onChange={[Function]}
                                             value={5}
                                           >
@@ -8931,7 +8943,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                   },
                                                   "MenuProps": undefined,
                                                   "SelectDisplayProps": Object {
-                                                    "id": "mui-11523",
+                                                    "id": "mui-20040",
                                                   },
                                                   "autoWidth": false,
                                                   "children": Array [
@@ -8968,7 +8980,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                     "selectMenu": "MuiSelect-selectMenu",
                                                   },
                                                   "displayEmpty": false,
-                                                  "labelId": "mui-27468",
+                                                  "labelId": "mui-81665",
                                                   "multiple": false,
                                                   "onClose": undefined,
                                                   "onOpen": undefined,
@@ -9053,7 +9065,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                     },
                                                     "MenuProps": undefined,
                                                     "SelectDisplayProps": Object {
-                                                      "id": "mui-11523",
+                                                      "id": "mui-20040",
                                                     },
                                                     "autoWidth": false,
                                                     "children": Array [
@@ -9090,7 +9102,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                       "selectMenu": "MuiSelect-selectMenu",
                                                     },
                                                     "displayEmpty": false,
-                                                    "labelId": "mui-27468",
+                                                    "labelId": "mui-81665",
                                                     "multiple": false,
                                                     "onClose": undefined,
                                                     "onOpen": undefined,
@@ -9120,7 +9132,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                     }
                                                     SelectDisplayProps={
                                                       Object {
-                                                        "id": "mui-11523",
+                                                        "id": "mui-20040",
                                                       }
                                                     }
                                                     autoWidth={false}
@@ -9142,7 +9154,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                     }
                                                     displayEmpty={false}
                                                     inputRef={[Function]}
-                                                    labelId="mui-27468"
+                                                    labelId="mui-81665"
                                                     multiple={false}
                                                     onAnimationStart={[Function]}
                                                     onBlur={[Function]}
@@ -9153,9 +9165,9 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                   >
                                                     <div
                                                       aria-haspopup="listbox"
-                                                      aria-labelledby="mui-27468 mui-11523"
+                                                      aria-labelledby="mui-81665 mui-20040"
                                                       className="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                      id="mui-11523"
+                                                      id="mui-20040"
                                                       onBlur={[Function]}
                                                       onFocus={[Function]}
                                                       onKeyDown={[Function]}
@@ -9211,7 +9223,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                     <WithStyles(ForwardRef(Menu))
                                                       MenuListProps={
                                                         Object {
-                                                          "aria-labelledby": "mui-27468",
+                                                          "aria-labelledby": "mui-81665",
                                                           "disableListWrap": true,
                                                           "role": "listbox",
                                                         }
@@ -9226,9 +9238,9 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                       anchorEl={
                                                         <div
                                                           aria-haspopup="listbox"
-                                                          aria-labelledby="mui-27468 mui-11523"
+                                                          aria-labelledby="mui-81665 mui-20040"
                                                           class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                          id="mui-11523"
+                                                          id="mui-20040"
                                                           role="button"
                                                           tabindex="0"
                                                         >
@@ -9242,7 +9254,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                       <ForwardRef(Menu)
                                                         MenuListProps={
                                                           Object {
-                                                            "aria-labelledby": "mui-27468",
+                                                            "aria-labelledby": "mui-81665",
                                                             "disableListWrap": true,
                                                             "role": "listbox",
                                                           }
@@ -9257,9 +9269,9 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                         anchorEl={
                                                           <div
                                                             aria-haspopup="listbox"
-                                                            aria-labelledby="mui-27468 mui-11523"
+                                                            aria-labelledby="mui-81665 mui-20040"
                                                             class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                            id="mui-11523"
+                                                            id="mui-20040"
                                                             role="button"
                                                             tabindex="0"
                                                           >
@@ -9295,9 +9307,9 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                           anchorEl={
                                                             <div
                                                               aria-haspopup="listbox"
-                                                              aria-labelledby="mui-27468 mui-11523"
+                                                              aria-labelledby="mui-81665 mui-20040"
                                                               class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                              id="mui-11523"
+                                                              id="mui-20040"
                                                               role="button"
                                                               tabindex="0"
                                                             >
@@ -9341,9 +9353,9 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                             anchorEl={
                                                               <div
                                                                 aria-haspopup="listbox"
-                                                                aria-labelledby="mui-27468 mui-11523"
+                                                                aria-labelledby="mui-81665 mui-20040"
                                                                 class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                                id="mui-11523"
+                                                                id="mui-20040"
                                                                 role="button"
                                                                 tabindex="0"
                                                               >

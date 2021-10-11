@@ -29,5 +29,5 @@ export default function Scoreboard(props) {
         }
     }, [props.username]);
 
-    return <RenderScoreboard rows={rows}/>
+    return <RenderScoreboard rows={rows} />
 }

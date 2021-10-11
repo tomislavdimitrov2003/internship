@@ -1,13 +1,4 @@
 import React from 'react';
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableContainer from "@material-ui/core/TableContainer";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
-import Paper from "@material-ui/core/Paper";
-import { makeStyles } from '@material-ui/core/styles';
-import { deepPurple } from '@material-ui/core/colors';
 import { RenderBoard } from './BoardRender';
 import { DOWN, LEFT, RIGHT, UP, N } from './KeyCodes';
 
@@ -177,7 +168,7 @@ export class Board extends React.Component {
                     board[r][c] = board[r][c] * 2;
                     board[r][c + 1] = 0;
                     score += board[r][c];
-                    
+
                     for (let i = c + 2; i < board.length - 1; i++) {
                         board[r][i - 1] = board[r][i];
                     }

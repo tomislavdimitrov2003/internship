@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { lighten, makeStyles } from '@material-ui/core/styles';
@@ -13,9 +13,6 @@ import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
-import Checkbox from '@material-ui/core/Checkbox';
-import IconButton from '@material-ui/core/IconButton';
-import Tooltip from '@material-ui/core/Tooltip';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 
@@ -73,6 +70,7 @@ function EnhancedTableHead(props) {
                     >
                         <TableSortLabel
                             key={headCell.id}
+                            className={headCell.id + "Head"}
                             active={orderBy === headCell.id}
                             direction={orderBy === headCell.id ? order : 'asc'}
                             onClick={createSortHandler(headCell.id)}
@@ -93,7 +91,6 @@ function EnhancedTableHead(props) {
 
 EnhancedTableHead.propTypes = {
     classes: PropTypes.object.isRequired,
-    numSelected: PropTypes.number.isRequired,
     onRequestSort: PropTypes.func.isRequired,
     order: PropTypes.oneOf(['asc', 'desc']).isRequired,
     orderBy: PropTypes.string.isRequired,
@@ -126,19 +123,13 @@ const EnhancedTableToolbar = (props) => {
 
     return (
         <Toolbar
-            className={clsx(classes.root, {
-                [classes.highlight]: numSelected > 0,
-            })}
+            className={clsx(classes.root)}
         >
             <Typography className={classes.title} variant="h6" id="tableTitle" component="div">
                 Scoreboard
             </Typography>
         </Toolbar>
     );
-};
-
-EnhancedTableToolbar.propTypes = {
-    numSelected: PropTypes.number.isRequired,
 };
 
 const useStyles = makeStyles((theme) => ({
@@ -169,7 +160,6 @@ export default function RenderScoreboard(props) {
     const classes = useStyles();
     const [order, setOrder] = React.useState('desc');
     const [orderBy, setOrderBy] = React.useState('score');
-    const [selected, setSelected] = React.useState([]);
     const [page, setPage] = React.useState(0);
     const [dense, setDense] = React.useState(false);
     const [rowsPerPage, setRowsPerPage] = React.useState(5);
@@ -198,7 +188,7 @@ export default function RenderScoreboard(props) {
     return (
         <div className={classes.root}>
             <Paper className={classes.paper}>
-                <EnhancedTableToolbar numSelected={selected.length} />
+                <EnhancedTableToolbar/>
                 <TableContainer>
                     <Table
                         className={classes.table}
@@ -208,7 +198,6 @@ export default function RenderScoreboard(props) {
                     >
                         <EnhancedTableHead
                             classes={classes}
-                            numSelected={selected.length}
                             order={order}
                             orderBy={orderBy}
                             onRequestSort={handleRequestSort}
@@ -224,14 +213,12 @@ export default function RenderScoreboard(props) {
                                         <TableRow
                                             role="checkbox"
                                             tabIndex={-1}
-                                            key={row.name}
+                                            key={index}
                                         >
-                                            <TableCell padding="checkbox">
-                                            </TableCell>
-                                            <TableCell component="th" id={labelId} scope="row" padding="none">
+                                            <TableCell component="th" key={row.name} id={labelId} scope="row" padding="none">
                                                 {row.name}
                                             </TableCell>
-                                            <TableCell align="right">{row.score}</TableCell>
+                                            <TableCell key={row.score} align="right">{row.score}</TableCell>
                                         </TableRow>
                                     );
                                 })}
