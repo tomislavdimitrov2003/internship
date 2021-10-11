@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reanders board correctly 1`] = `
+<renderBoard
+  board={
+    Array [
+      Array [
+        0,
+        0,
+        0,
+        0,
+      ],
+      Array [
+        0,
+        0,
+        0,
+        0,
+      ],
+      Array [
+        0,
+        0,
+        0,
+        0,
+      ],
+      Array [
+        0,
+        0,
+        0,
+        0,
+      ],
+    ]
+  }
+  message="Test Message"
+  score={0}
+/>
+`;

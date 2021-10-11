@@ -1,0 +1,379 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`board tests moves board down correctly 1`] = `
+<div>
+  <div
+    className="score"
+  >
+    Score: 
+    0
+  </div>
+  <table
+    border="1px solid black"
+    border-collapse="collapse"
+  >
+    <tbody>
+      <Row
+        key="0"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            2,
+          ]
+        }
+      />
+      <Row
+        key="1"
+        row={
+          Array [
+            2,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+      <Row
+        key="2"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+      <Row
+        key="3"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+    </tbody>
+  </table>
+  <div />
+</div>
+`;
+
+exports[`board tests moves board to the left correctly 1`] = `
+<div>
+  <div
+    className="score"
+  >
+    Score: 
+    0
+  </div>
+  <table
+    border="1px solid black"
+    border-collapse="collapse"
+  >
+    <tbody>
+      <Row
+        key="0"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            2,
+          ]
+        }
+      />
+      <Row
+        key="1"
+        row={
+          Array [
+            2,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+      <Row
+        key="2"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+      <Row
+        key="3"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+    </tbody>
+  </table>
+  <div />
+</div>
+`;
+
+exports[`board tests moves board to the right correctly 1`] = `
+<div>
+  <div
+    className="score"
+  >
+    Score: 
+    0
+  </div>
+  <table
+    border="1px solid black"
+    border-collapse="collapse"
+  >
+    <tbody>
+      <Row
+        key="0"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            2,
+          ]
+        }
+      />
+      <Row
+        key="1"
+        row={
+          Array [
+            2,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+      <Row
+        key="2"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+      <Row
+        key="3"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+    </tbody>
+  </table>
+  <div />
+</div>
+`;
+
+exports[`board tests moves board up correctly 1`] = `
+<div>
+  <div
+    className="score"
+  >
+    Score: 
+    0
+  </div>
+  <table
+    border="1px solid black"
+    border-collapse="collapse"
+  >
+    <tbody>
+      <Row
+        key="0"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            2,
+          ]
+        }
+      />
+      <Row
+        key="1"
+        row={
+          Array [
+            2,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+      <Row
+        key="2"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+      <Row
+        key="3"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+    </tbody>
+  </table>
+  <div />
+</div>
+`;
+
+exports[`board tests re-renders initial board correctly 1`] = `
+<div>
+  <div
+    className="score"
+  >
+    Score: 
+    0
+  </div>
+  <table
+    border="1px solid black"
+    border-collapse="collapse"
+  >
+    <tbody>
+      <Row
+        key="0"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            2,
+          ]
+        }
+      />
+      <Row
+        key="1"
+        row={
+          Array [
+            2,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+      <Row
+        key="2"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+      <Row
+        key="3"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+    </tbody>
+  </table>
+  <div />
+</div>
+`;
+
+exports[`board tests renders initial board correctly 1`] = `
+<div>
+  <div
+    className="score"
+  >
+    Score: 
+    0
+  </div>
+  <table
+    border="1px solid black"
+    border-collapse="collapse"
+  >
+    <tbody>
+      <Row
+        key="0"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            2,
+          ]
+        }
+      />
+      <Row
+        key="1"
+        row={
+          Array [
+            2,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+      <Row
+        key="2"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+      <Row
+        key="3"
+        row={
+          Array [
+            0,
+            0,
+            0,
+            0,
+          ]
+        }
+      />
+    </tbody>
+  </table>
+  <div />
+</div>
+`;

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders resize buttons correctly 1`] = `
+<div>
+  <button
+    className="resize4"
+    onClick={[Function]}
+    type="button"
+  >
+    4x4
+  </button>
+  <button
+    className="resize5"
+    onClick={[Function]}
+    type="button"
+  >
+    5x5
+  </button>
+  <button
+    className="resize6"
+    onClick={[Function]}
+    type="button"
+  >
+    6x6
+  </button>
+</div>
+`;
