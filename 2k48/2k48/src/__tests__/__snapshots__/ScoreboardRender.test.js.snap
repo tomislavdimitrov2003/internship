@@ -59,9 +59,7 @@ exports[`renders default scoreboard correctly 1`] = `
         <div
           className="MuiPaper-root makeStyles-paper-2 MuiPaper-elevation1 MuiPaper-rounded"
         >
-          <EnhancedTableToolbar
-            numSelected={0}
-          >
+          <EnhancedTableToolbar>
             <WithStyles(ForwardRef(Toolbar))
               className="makeStyles-root-5"
             >
@@ -181,7 +179,6 @@ exports[`renders default scoreboard correctly 1`] = `
                             "visuallyHidden": "makeStyles-visuallyHidden-4",
                           }
                         }
-                        numSelected={0}
                         onRequestSort={[Function]}
                         order="desc"
                         orderBy="score"
@@ -846,7 +843,7 @@ exports[`renders default scoreboard correctly 1`] = `
                       <WithStyles(ForwardRef(Typography))
                         className="MuiTablePagination-caption"
                         color="inherit"
-                        id="mui-17283"
+                        id="mui-41324"
                         variant="body2"
                       >
                         <ForwardRef(Typography)
@@ -886,12 +883,12 @@ exports[`renders default scoreboard correctly 1`] = `
                             }
                           }
                           color="inherit"
-                          id="mui-17283"
+                          id="mui-41324"
                           variant="body2"
                         >
                           <p
                             className="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
-                            id="mui-17283"
+                            id="mui-41324"
                           >
                             Rows per page:
                           </p>
@@ -904,13 +901,13 @@ exports[`renders default scoreboard correctly 1`] = `
                             "select": "MuiTablePagination-select",
                           }
                         }
-                        id="mui-23065"
+                        id="mui-10030"
                         input={
                           <WithStyles(ForwardRef(InputBase))
                             className="MuiTablePagination-input MuiTablePagination-selectRoot"
                           />
                         }
-                        labelId="mui-17283"
+                        labelId="mui-41324"
                         onChange={[Function]}
                         value={5}
                       >
@@ -930,13 +927,13 @@ exports[`renders default scoreboard correctly 1`] = `
                               "selectMenu": "MuiSelect-selectMenu",
                             }
                           }
-                          id="mui-23065"
+                          id="mui-10030"
                           input={
                             <WithStyles(ForwardRef(InputBase))
                               className="MuiTablePagination-input MuiTablePagination-selectRoot"
                             />
                           }
-                          labelId="mui-17283"
+                          labelId="mui-41324"
                           onChange={[Function]}
                           value={5}
                         >
@@ -990,7 +987,7 @@ exports[`renders default scoreboard correctly 1`] = `
                                 },
                                 "MenuProps": undefined,
                                 "SelectDisplayProps": Object {
-                                  "id": "mui-23065",
+                                  "id": "mui-10030",
                                 },
                                 "autoWidth": false,
                                 "children": Array [
@@ -1027,7 +1024,7 @@ exports[`renders default scoreboard correctly 1`] = `
                                   "selectMenu": "MuiSelect-selectMenu",
                                 },
                                 "displayEmpty": false,
-                                "labelId": "mui-17283",
+                                "labelId": "mui-41324",
                                 "multiple": false,
                                 "onClose": undefined,
                                 "onOpen": undefined,
@@ -1112,7 +1109,7 @@ exports[`renders default scoreboard correctly 1`] = `
                                   },
                                   "MenuProps": undefined,
                                   "SelectDisplayProps": Object {
-                                    "id": "mui-23065",
+                                    "id": "mui-10030",
                                   },
                                   "autoWidth": false,
                                   "children": Array [
@@ -1149,7 +1146,7 @@ exports[`renders default scoreboard correctly 1`] = `
                                     "selectMenu": "MuiSelect-selectMenu",
                                   },
                                   "displayEmpty": false,
-                                  "labelId": "mui-17283",
+                                  "labelId": "mui-41324",
                                   "multiple": false,
                                   "onClose": undefined,
                                   "onOpen": undefined,
@@ -1179,7 +1176,7 @@ exports[`renders default scoreboard correctly 1`] = `
                                   }
                                   SelectDisplayProps={
                                     Object {
-                                      "id": "mui-23065",
+                                      "id": "mui-10030",
                                     }
                                   }
                                   autoWidth={false}
@@ -1201,7 +1198,7 @@ exports[`renders default scoreboard correctly 1`] = `
                                   }
                                   displayEmpty={false}
                                   inputRef={[Function]}
-                                  labelId="mui-17283"
+                                  labelId="mui-41324"
                                   multiple={false}
                                   onAnimationStart={[Function]}
                                   onBlur={[Function]}
@@ -1212,9 +1209,9 @@ exports[`renders default scoreboard correctly 1`] = `
                                 >
                                   <div
                                     aria-haspopup="listbox"
-                                    aria-labelledby="mui-17283 mui-23065"
+                                    aria-labelledby="mui-41324 mui-10030"
                                     className="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                    id="mui-23065"
+                                    id="mui-10030"
                                     onBlur={[Function]}
                                     onFocus={[Function]}
                                     onKeyDown={[Function]}
@@ -1270,7 +1267,7 @@ exports[`renders default scoreboard correctly 1`] = `
                                   <WithStyles(ForwardRef(Menu))
                                     MenuListProps={
                                       Object {
-                                        "aria-labelledby": "mui-17283",
+                                        "aria-labelledby": "mui-41324",
                                         "disableListWrap": true,
                                         "role": "listbox",
                                       }
@@ -1285,9 +1282,9 @@ exports[`renders default scoreboard correctly 1`] = `
                                     anchorEl={
                                       <div
                                         aria-haspopup="listbox"
-                                        aria-labelledby="mui-17283 mui-23065"
+                                        aria-labelledby="mui-41324 mui-10030"
                                         class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                        id="mui-23065"
+                                        id="mui-10030"
                                         role="button"
                                         tabindex="0"
                                       >
@@ -1301,7 +1298,7 @@ exports[`renders default scoreboard correctly 1`] = `
                                     <ForwardRef(Menu)
                                       MenuListProps={
                                         Object {
-                                          "aria-labelledby": "mui-17283",
+                                          "aria-labelledby": "mui-41324",
                                           "disableListWrap": true,
                                           "role": "listbox",
                                         }
@@ -1316,9 +1313,9 @@ exports[`renders default scoreboard correctly 1`] = `
                                       anchorEl={
                                         <div
                                           aria-haspopup="listbox"
-                                          aria-labelledby="mui-17283 mui-23065"
+                                          aria-labelledby="mui-41324 mui-10030"
                                           class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                          id="mui-23065"
+                                          id="mui-10030"
                                           role="button"
                                           tabindex="0"
                                         >
@@ -1354,9 +1351,9 @@ exports[`renders default scoreboard correctly 1`] = `
                                         anchorEl={
                                           <div
                                             aria-haspopup="listbox"
-                                            aria-labelledby="mui-17283 mui-23065"
+                                            aria-labelledby="mui-41324 mui-10030"
                                             class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                            id="mui-23065"
+                                            id="mui-10030"
                                             role="button"
                                             tabindex="0"
                                           >
@@ -1400,9 +1397,9 @@ exports[`renders default scoreboard correctly 1`] = `
                                           anchorEl={
                                             <div
                                               aria-haspopup="listbox"
-                                              aria-labelledby="mui-17283 mui-23065"
+                                              aria-labelledby="mui-41324 mui-10030"
                                               class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                              id="mui-23065"
+                                              id="mui-10030"
                                               role="button"
                                               tabindex="0"
                                             >
@@ -2104,9 +2101,7 @@ exports[`sort scoreboard by name correctly 1`] = `
         <div
           className="MuiPaper-root makeStyles-paper-2 MuiPaper-elevation1 MuiPaper-rounded"
         >
-          <EnhancedTableToolbar
-            numSelected={0}
-          >
+          <EnhancedTableToolbar>
             <WithStyles(ForwardRef(Toolbar))
               className="makeStyles-root-5"
             >
@@ -2226,7 +2221,6 @@ exports[`sort scoreboard by name correctly 1`] = `
                             "visuallyHidden": "makeStyles-visuallyHidden-4",
                           }
                         }
-                        numSelected={0}
                         onRequestSort={[Function]}
                         order="asc"
                         orderBy="name"
@@ -2891,7 +2885,7 @@ exports[`sort scoreboard by name correctly 1`] = `
                       <WithStyles(ForwardRef(Typography))
                         className="MuiTablePagination-caption"
                         color="inherit"
-                        id="mui-3351"
+                        id="mui-62136"
                         variant="body2"
                       >
                         <ForwardRef(Typography)
@@ -2931,12 +2925,12 @@ exports[`sort scoreboard by name correctly 1`] = `
                             }
                           }
                           color="inherit"
-                          id="mui-3351"
+                          id="mui-62136"
                           variant="body2"
                         >
                           <p
                             className="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
-                            id="mui-3351"
+                            id="mui-62136"
                           >
                             Rows per page:
                           </p>
@@ -2949,13 +2943,13 @@ exports[`sort scoreboard by name correctly 1`] = `
                             "select": "MuiTablePagination-select",
                           }
                         }
-                        id="mui-37729"
+                        id="mui-87814"
                         input={
                           <WithStyles(ForwardRef(InputBase))
                             className="MuiTablePagination-input MuiTablePagination-selectRoot"
                           />
                         }
-                        labelId="mui-3351"
+                        labelId="mui-62136"
                         onChange={[Function]}
                         value={5}
                       >
@@ -2975,13 +2969,13 @@ exports[`sort scoreboard by name correctly 1`] = `
                               "selectMenu": "MuiSelect-selectMenu",
                             }
                           }
-                          id="mui-37729"
+                          id="mui-87814"
                           input={
                             <WithStyles(ForwardRef(InputBase))
                               className="MuiTablePagination-input MuiTablePagination-selectRoot"
                             />
                           }
-                          labelId="mui-3351"
+                          labelId="mui-62136"
                           onChange={[Function]}
                           value={5}
                         >
@@ -3035,7 +3029,7 @@ exports[`sort scoreboard by name correctly 1`] = `
                                 },
                                 "MenuProps": undefined,
                                 "SelectDisplayProps": Object {
-                                  "id": "mui-37729",
+                                  "id": "mui-87814",
                                 },
                                 "autoWidth": false,
                                 "children": Array [
@@ -3072,7 +3066,7 @@ exports[`sort scoreboard by name correctly 1`] = `
                                   "selectMenu": "MuiSelect-selectMenu",
                                 },
                                 "displayEmpty": false,
-                                "labelId": "mui-3351",
+                                "labelId": "mui-62136",
                                 "multiple": false,
                                 "onClose": undefined,
                                 "onOpen": undefined,
@@ -3157,7 +3151,7 @@ exports[`sort scoreboard by name correctly 1`] = `
                                   },
                                   "MenuProps": undefined,
                                   "SelectDisplayProps": Object {
-                                    "id": "mui-37729",
+                                    "id": "mui-87814",
                                   },
                                   "autoWidth": false,
                                   "children": Array [
@@ -3194,7 +3188,7 @@ exports[`sort scoreboard by name correctly 1`] = `
                                     "selectMenu": "MuiSelect-selectMenu",
                                   },
                                   "displayEmpty": false,
-                                  "labelId": "mui-3351",
+                                  "labelId": "mui-62136",
                                   "multiple": false,
                                   "onClose": undefined,
                                   "onOpen": undefined,
@@ -3224,7 +3218,7 @@ exports[`sort scoreboard by name correctly 1`] = `
                                   }
                                   SelectDisplayProps={
                                     Object {
-                                      "id": "mui-37729",
+                                      "id": "mui-87814",
                                     }
                                   }
                                   autoWidth={false}
@@ -3246,7 +3240,7 @@ exports[`sort scoreboard by name correctly 1`] = `
                                   }
                                   displayEmpty={false}
                                   inputRef={[Function]}
-                                  labelId="mui-3351"
+                                  labelId="mui-62136"
                                   multiple={false}
                                   onAnimationStart={[Function]}
                                   onBlur={[Function]}
@@ -3257,9 +3251,9 @@ exports[`sort scoreboard by name correctly 1`] = `
                                 >
                                   <div
                                     aria-haspopup="listbox"
-                                    aria-labelledby="mui-3351 mui-37729"
+                                    aria-labelledby="mui-62136 mui-87814"
                                     className="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                    id="mui-37729"
+                                    id="mui-87814"
                                     onBlur={[Function]}
                                     onFocus={[Function]}
                                     onKeyDown={[Function]}
@@ -3315,7 +3309,7 @@ exports[`sort scoreboard by name correctly 1`] = `
                                   <WithStyles(ForwardRef(Menu))
                                     MenuListProps={
                                       Object {
-                                        "aria-labelledby": "mui-3351",
+                                        "aria-labelledby": "mui-62136",
                                         "disableListWrap": true,
                                         "role": "listbox",
                                       }
@@ -3330,9 +3324,9 @@ exports[`sort scoreboard by name correctly 1`] = `
                                     anchorEl={
                                       <div
                                         aria-haspopup="listbox"
-                                        aria-labelledby="mui-3351 mui-37729"
+                                        aria-labelledby="mui-62136 mui-87814"
                                         class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                        id="mui-37729"
+                                        id="mui-87814"
                                         role="button"
                                         tabindex="0"
                                       >
@@ -3346,7 +3340,7 @@ exports[`sort scoreboard by name correctly 1`] = `
                                     <ForwardRef(Menu)
                                       MenuListProps={
                                         Object {
-                                          "aria-labelledby": "mui-3351",
+                                          "aria-labelledby": "mui-62136",
                                           "disableListWrap": true,
                                           "role": "listbox",
                                         }
@@ -3361,9 +3355,9 @@ exports[`sort scoreboard by name correctly 1`] = `
                                       anchorEl={
                                         <div
                                           aria-haspopup="listbox"
-                                          aria-labelledby="mui-3351 mui-37729"
+                                          aria-labelledby="mui-62136 mui-87814"
                                           class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                          id="mui-37729"
+                                          id="mui-87814"
                                           role="button"
                                           tabindex="0"
                                         >
@@ -3399,9 +3393,9 @@ exports[`sort scoreboard by name correctly 1`] = `
                                         anchorEl={
                                           <div
                                             aria-haspopup="listbox"
-                                            aria-labelledby="mui-3351 mui-37729"
+                                            aria-labelledby="mui-62136 mui-87814"
                                             class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                            id="mui-37729"
+                                            id="mui-87814"
                                             role="button"
                                             tabindex="0"
                                           >
@@ -3445,9 +3439,9 @@ exports[`sort scoreboard by name correctly 1`] = `
                                           anchorEl={
                                             <div
                                               aria-haspopup="listbox"
-                                              aria-labelledby="mui-3351 mui-37729"
+                                              aria-labelledby="mui-62136 mui-87814"
                                               class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                              id="mui-37729"
+                                              id="mui-87814"
                                               role="button"
                                               tabindex="0"
                                             >
@@ -4149,9 +4143,7 @@ exports[`sort scoreboard by score correctly 1`] = `
         <div
           className="MuiPaper-root makeStyles-paper-2 MuiPaper-elevation1 MuiPaper-rounded"
         >
-          <EnhancedTableToolbar
-            numSelected={0}
-          >
+          <EnhancedTableToolbar>
             <WithStyles(ForwardRef(Toolbar))
               className="makeStyles-root-5"
             >
@@ -4271,7 +4263,6 @@ exports[`sort scoreboard by score correctly 1`] = `
                             "visuallyHidden": "makeStyles-visuallyHidden-4",
                           }
                         }
-                        numSelected={0}
                         onRequestSort={[Function]}
                         order="asc"
                         orderBy="score"
@@ -4936,7 +4927,7 @@ exports[`sort scoreboard by score correctly 1`] = `
                       <WithStyles(ForwardRef(Typography))
                         className="MuiTablePagination-caption"
                         color="inherit"
-                        id="mui-40890"
+                        id="mui-5805"
                         variant="body2"
                       >
                         <ForwardRef(Typography)
@@ -4976,12 +4967,12 @@ exports[`sort scoreboard by score correctly 1`] = `
                             }
                           }
                           color="inherit"
-                          id="mui-40890"
+                          id="mui-5805"
                           variant="body2"
                         >
                           <p
                             className="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
-                            id="mui-40890"
+                            id="mui-5805"
                           >
                             Rows per page:
                           </p>
@@ -4994,13 +4985,13 @@ exports[`sort scoreboard by score correctly 1`] = `
                             "select": "MuiTablePagination-select",
                           }
                         }
-                        id="mui-5182"
+                        id="mui-44552"
                         input={
                           <WithStyles(ForwardRef(InputBase))
                             className="MuiTablePagination-input MuiTablePagination-selectRoot"
                           />
                         }
-                        labelId="mui-40890"
+                        labelId="mui-5805"
                         onChange={[Function]}
                         value={5}
                       >
@@ -5020,13 +5011,13 @@ exports[`sort scoreboard by score correctly 1`] = `
                               "selectMenu": "MuiSelect-selectMenu",
                             }
                           }
-                          id="mui-5182"
+                          id="mui-44552"
                           input={
                             <WithStyles(ForwardRef(InputBase))
                               className="MuiTablePagination-input MuiTablePagination-selectRoot"
                             />
                           }
-                          labelId="mui-40890"
+                          labelId="mui-5805"
                           onChange={[Function]}
                           value={5}
                         >
@@ -5080,7 +5071,7 @@ exports[`sort scoreboard by score correctly 1`] = `
                                 },
                                 "MenuProps": undefined,
                                 "SelectDisplayProps": Object {
-                                  "id": "mui-5182",
+                                  "id": "mui-44552",
                                 },
                                 "autoWidth": false,
                                 "children": Array [
@@ -5117,7 +5108,7 @@ exports[`sort scoreboard by score correctly 1`] = `
                                   "selectMenu": "MuiSelect-selectMenu",
                                 },
                                 "displayEmpty": false,
-                                "labelId": "mui-40890",
+                                "labelId": "mui-5805",
                                 "multiple": false,
                                 "onClose": undefined,
                                 "onOpen": undefined,
@@ -5202,7 +5193,7 @@ exports[`sort scoreboard by score correctly 1`] = `
                                   },
                                   "MenuProps": undefined,
                                   "SelectDisplayProps": Object {
-                                    "id": "mui-5182",
+                                    "id": "mui-44552",
                                   },
                                   "autoWidth": false,
                                   "children": Array [
@@ -5239,7 +5230,7 @@ exports[`sort scoreboard by score correctly 1`] = `
                                     "selectMenu": "MuiSelect-selectMenu",
                                   },
                                   "displayEmpty": false,
-                                  "labelId": "mui-40890",
+                                  "labelId": "mui-5805",
                                   "multiple": false,
                                   "onClose": undefined,
                                   "onOpen": undefined,
@@ -5269,7 +5260,7 @@ exports[`sort scoreboard by score correctly 1`] = `
                                   }
                                   SelectDisplayProps={
                                     Object {
-                                      "id": "mui-5182",
+                                      "id": "mui-44552",
                                     }
                                   }
                                   autoWidth={false}
@@ -5291,7 +5282,7 @@ exports[`sort scoreboard by score correctly 1`] = `
                                   }
                                   displayEmpty={false}
                                   inputRef={[Function]}
-                                  labelId="mui-40890"
+                                  labelId="mui-5805"
                                   multiple={false}
                                   onAnimationStart={[Function]}
                                   onBlur={[Function]}
@@ -5302,9 +5293,9 @@ exports[`sort scoreboard by score correctly 1`] = `
                                 >
                                   <div
                                     aria-haspopup="listbox"
-                                    aria-labelledby="mui-40890 mui-5182"
+                                    aria-labelledby="mui-5805 mui-44552"
                                     className="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                    id="mui-5182"
+                                    id="mui-44552"
                                     onBlur={[Function]}
                                     onFocus={[Function]}
                                     onKeyDown={[Function]}
@@ -5360,7 +5351,7 @@ exports[`sort scoreboard by score correctly 1`] = `
                                   <WithStyles(ForwardRef(Menu))
                                     MenuListProps={
                                       Object {
-                                        "aria-labelledby": "mui-40890",
+                                        "aria-labelledby": "mui-5805",
                                         "disableListWrap": true,
                                         "role": "listbox",
                                       }
@@ -5375,9 +5366,9 @@ exports[`sort scoreboard by score correctly 1`] = `
                                     anchorEl={
                                       <div
                                         aria-haspopup="listbox"
-                                        aria-labelledby="mui-40890 mui-5182"
+                                        aria-labelledby="mui-5805 mui-44552"
                                         class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                        id="mui-5182"
+                                        id="mui-44552"
                                         role="button"
                                         tabindex="0"
                                       >
@@ -5391,7 +5382,7 @@ exports[`sort scoreboard by score correctly 1`] = `
                                     <ForwardRef(Menu)
                                       MenuListProps={
                                         Object {
-                                          "aria-labelledby": "mui-40890",
+                                          "aria-labelledby": "mui-5805",
                                           "disableListWrap": true,
                                           "role": "listbox",
                                         }
@@ -5406,9 +5397,9 @@ exports[`sort scoreboard by score correctly 1`] = `
                                       anchorEl={
                                         <div
                                           aria-haspopup="listbox"
-                                          aria-labelledby="mui-40890 mui-5182"
+                                          aria-labelledby="mui-5805 mui-44552"
                                           class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                          id="mui-5182"
+                                          id="mui-44552"
                                           role="button"
                                           tabindex="0"
                                         >
@@ -5444,9 +5435,9 @@ exports[`sort scoreboard by score correctly 1`] = `
                                         anchorEl={
                                           <div
                                             aria-haspopup="listbox"
-                                            aria-labelledby="mui-40890 mui-5182"
+                                            aria-labelledby="mui-5805 mui-44552"
                                             class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                            id="mui-5182"
+                                            id="mui-44552"
                                             role="button"
                                             tabindex="0"
                                           >
@@ -5490,9 +5481,9 @@ exports[`sort scoreboard by score correctly 1`] = `
                                           anchorEl={
                                             <div
                                               aria-haspopup="listbox"
-                                              aria-labelledby="mui-40890 mui-5182"
+                                              aria-labelledby="mui-5805 mui-44552"
                                               class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                              id="mui-5182"
+                                              id="mui-44552"
                                               role="button"
                                               tabindex="0"
                                             >

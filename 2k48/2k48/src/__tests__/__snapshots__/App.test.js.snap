@@ -454,370 +454,372 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                       border="1px solid black"
                       border-collapse="collapse"
                     >
-                      <Row
-                        key="0"
-                        row={
-                          Array [
-                            0,
-                            0,
-                            0,
-                            0,
-                          ]
-                        }
-                      >
-                        <tr>
-                          <Cell
-                            cellValue={0}
-                            key="0"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
-                                }
-                              }
-                              width="50"
+                      <tbody>
+                        <Row
+                          key="0"
+                          row={
+                            Array [
+                              0,
+                              0,
+                              4,
+                              0,
+                            ]
+                          }
+                        >
+                          <tr>
+                            <Cell
+                              cellValue={0}
+                              key="0"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="1"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="1"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="2"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={4}
+                              key="2"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="3"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "rgb(0, 180, 128)",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div>
+                                  4
+                                </div>
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="3"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                        </tr>
-                      </Row>
-                      <Row
-                        key="1"
-                        row={
-                          Array [
-                            0,
-                            0,
-                            0,
-                            0,
-                          ]
-                        }
-                      >
-                        <tr>
-                          <Cell
-                            cellValue={0}
-                            key="0"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                          </tr>
+                        </Row>
+                        <Row
+                          key="1"
+                          row={
+                            Array [
+                              0,
+                              0,
+                              0,
+                              0,
+                            ]
+                          }
+                        >
+                          <tr>
+                            <Cell
+                              cellValue={0}
+                              key="0"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="1"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="1"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="2"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="2"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="3"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="3"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                        </tr>
-                      </Row>
-                      <Row
-                        key="2"
-                        row={
-                          Array [
-                            2,
-                            0,
-                            0,
-                            0,
-                          ]
-                        }
-                      >
-                        <tr>
-                          <Cell
-                            cellValue={2}
-                            key="0"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "rgb(128, 140, 0)",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                          </tr>
+                        </Row>
+                        <Row
+                          key="2"
+                          row={
+                            Array [
+                              0,
+                              0,
+                              0,
+                              0,
+                            ]
+                          }
+                        >
+                          <tr>
+                            <Cell
+                              cellValue={0}
+                              key="0"
                             >
-                              <div>
-                                2
-                              </div>
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="1"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="1"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="2"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="2"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="3"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="3"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                        </tr>
-                      </Row>
-                      <Row
-                        key="3"
-                        row={
-                          Array [
-                            4,
-                            0,
-                            0,
-                            0,
-                          ]
-                        }
-                      >
-                        <tr>
-                          <Cell
-                            cellValue={4}
-                            key="0"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "rgb(0, 180, 128)",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                          </tr>
+                        </Row>
+                        <Row
+                          key="3"
+                          row={
+                            Array [
+                              0,
+                              4,
+                              0,
+                              0,
+                            ]
+                          }
+                        >
+                          <tr>
+                            <Cell
+                              cellValue={0}
+                              key="0"
                             >
-                              <div>
-                                4
-                              </div>
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="1"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={4}
+                              key="1"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="2"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "rgb(0, 180, 128)",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div>
+                                  4
+                                </div>
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="2"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="3"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="3"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                        </tr>
-                      </Row>
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
+                                }
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                          </tr>
+                        </Row>
+                      </tbody>
                     </table>
                     <div />
                   </div>
@@ -828,7 +830,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                 >
                   <div>
                     <WithStyles(ForwardRef(Dialog))
-                      onClose={false}
+                      onClose={[Function]}
                       open={false}
                     >
                       <ForwardRef(Dialog)
@@ -851,7 +853,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                             "scrollPaper": "MuiDialog-scrollPaper",
                           }
                         }
-                        onClose={false}
+                        onClose={[Function]}
                         open={false}
                       >
                         <ForwardRef(Modal)
@@ -1181,7 +1183,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                           className="MuiDialog-root"
                           closeAfterTransition={true}
                           disableEscapeKeyDown={false}
-                          onClose={false}
+                          onClose={[Function]}
                           open={false}
                         />
                       </ForwardRef(Dialog)>
@@ -1362,9 +1364,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                           <div
                             className="MuiPaper-root makeStyles-paper-2 MuiPaper-elevation1 MuiPaper-rounded"
                           >
-                            <EnhancedTableToolbar
-                              numSelected={0}
-                            >
+                            <EnhancedTableToolbar>
                               <WithStyles(ForwardRef(Toolbar))
                                 className="makeStyles-root-5"
                               >
@@ -1484,7 +1484,6 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                               "visuallyHidden": "makeStyles-visuallyHidden-4",
                                             }
                                           }
-                                          numSelected={0}
                                           onRequestSort={[Function]}
                                           order="desc"
                                           orderBy="score"
@@ -1955,7 +1954,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                         <WithStyles(ForwardRef(Typography))
                                           className="MuiTablePagination-caption"
                                           color="inherit"
-                                          id="mui-76362"
+                                          id="mui-6386"
                                           variant="body2"
                                         >
                                           <ForwardRef(Typography)
@@ -1995,12 +1994,12 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                               }
                                             }
                                             color="inherit"
-                                            id="mui-76362"
+                                            id="mui-6386"
                                             variant="body2"
                                           >
                                             <p
                                               className="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
-                                              id="mui-76362"
+                                              id="mui-6386"
                                             >
                                               Rows per page:
                                             </p>
@@ -2013,13 +2012,13 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                               "select": "MuiTablePagination-select",
                                             }
                                           }
-                                          id="mui-91996"
+                                          id="mui-31407"
                                           input={
                                             <WithStyles(ForwardRef(InputBase))
                                               className="MuiTablePagination-input MuiTablePagination-selectRoot"
                                             />
                                           }
-                                          labelId="mui-76362"
+                                          labelId="mui-6386"
                                           onChange={[Function]}
                                           value={5}
                                         >
@@ -2039,13 +2038,13 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                 "selectMenu": "MuiSelect-selectMenu",
                                               }
                                             }
-                                            id="mui-91996"
+                                            id="mui-31407"
                                             input={
                                               <WithStyles(ForwardRef(InputBase))
                                                 className="MuiTablePagination-input MuiTablePagination-selectRoot"
                                               />
                                             }
-                                            labelId="mui-76362"
+                                            labelId="mui-6386"
                                             onChange={[Function]}
                                             value={5}
                                           >
@@ -2099,7 +2098,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                   },
                                                   "MenuProps": undefined,
                                                   "SelectDisplayProps": Object {
-                                                    "id": "mui-91996",
+                                                    "id": "mui-31407",
                                                   },
                                                   "autoWidth": false,
                                                   "children": Array [
@@ -2136,7 +2135,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                     "selectMenu": "MuiSelect-selectMenu",
                                                   },
                                                   "displayEmpty": false,
-                                                  "labelId": "mui-76362",
+                                                  "labelId": "mui-6386",
                                                   "multiple": false,
                                                   "onClose": undefined,
                                                   "onOpen": undefined,
@@ -2221,7 +2220,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                     },
                                                     "MenuProps": undefined,
                                                     "SelectDisplayProps": Object {
-                                                      "id": "mui-91996",
+                                                      "id": "mui-31407",
                                                     },
                                                     "autoWidth": false,
                                                     "children": Array [
@@ -2258,7 +2257,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                       "selectMenu": "MuiSelect-selectMenu",
                                                     },
                                                     "displayEmpty": false,
-                                                    "labelId": "mui-76362",
+                                                    "labelId": "mui-6386",
                                                     "multiple": false,
                                                     "onClose": undefined,
                                                     "onOpen": undefined,
@@ -2288,7 +2287,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                     }
                                                     SelectDisplayProps={
                                                       Object {
-                                                        "id": "mui-91996",
+                                                        "id": "mui-31407",
                                                       }
                                                     }
                                                     autoWidth={false}
@@ -2310,7 +2309,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                     }
                                                     displayEmpty={false}
                                                     inputRef={[Function]}
-                                                    labelId="mui-76362"
+                                                    labelId="mui-6386"
                                                     multiple={false}
                                                     onAnimationStart={[Function]}
                                                     onBlur={[Function]}
@@ -2321,9 +2320,9 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                   >
                                                     <div
                                                       aria-haspopup="listbox"
-                                                      aria-labelledby="mui-76362 mui-91996"
+                                                      aria-labelledby="mui-6386 mui-31407"
                                                       className="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                      id="mui-91996"
+                                                      id="mui-31407"
                                                       onBlur={[Function]}
                                                       onFocus={[Function]}
                                                       onKeyDown={[Function]}
@@ -2379,7 +2378,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                     <WithStyles(ForwardRef(Menu))
                                                       MenuListProps={
                                                         Object {
-                                                          "aria-labelledby": "mui-76362",
+                                                          "aria-labelledby": "mui-6386",
                                                           "disableListWrap": true,
                                                           "role": "listbox",
                                                         }
@@ -2394,9 +2393,9 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                       anchorEl={
                                                         <div
                                                           aria-haspopup="listbox"
-                                                          aria-labelledby="mui-76362 mui-91996"
+                                                          aria-labelledby="mui-6386 mui-31407"
                                                           class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                          id="mui-91996"
+                                                          id="mui-31407"
                                                           role="button"
                                                           tabindex="0"
                                                         >
@@ -2410,7 +2409,7 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                       <ForwardRef(Menu)
                                                         MenuListProps={
                                                           Object {
-                                                            "aria-labelledby": "mui-76362",
+                                                            "aria-labelledby": "mui-6386",
                                                             "disableListWrap": true,
                                                             "role": "listbox",
                                                           }
@@ -2425,9 +2424,9 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                         anchorEl={
                                                           <div
                                                             aria-haspopup="listbox"
-                                                            aria-labelledby="mui-76362 mui-91996"
+                                                            aria-labelledby="mui-6386 mui-31407"
                                                             class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                            id="mui-91996"
+                                                            id="mui-31407"
                                                             role="button"
                                                             tabindex="0"
                                                           >
@@ -2463,9 +2462,9 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                           anchorEl={
                                                             <div
                                                               aria-haspopup="listbox"
-                                                              aria-labelledby="mui-76362 mui-91996"
+                                                              aria-labelledby="mui-6386 mui-31407"
                                                               class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                              id="mui-91996"
+                                                              id="mui-31407"
                                                               role="button"
                                                               tabindex="0"
                                                             >
@@ -2509,9 +2508,9 @@ exports[`resizes correctly resizes 4x4 board correctly 1`] = `
                                                             anchorEl={
                                                               <div
                                                                 aria-haspopup="listbox"
-                                                                aria-labelledby="mui-76362 mui-91996"
+                                                                aria-labelledby="mui-6386 mui-31407"
                                                                 class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                                id="mui-91996"
+                                                                id="mui-31407"
                                                                 role="button"
                                                                 tabindex="0"
                                                               >
@@ -3571,560 +3570,562 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                       border="1px solid black"
                       border-collapse="collapse"
                     >
-                      <Row
-                        key="0"
-                        row={
-                          Array [
-                            0,
-                            0,
-                            0,
-                            0,
-                            4,
-                          ]
-                        }
-                      >
-                        <tr>
-                          <Cell
-                            cellValue={0}
-                            key="0"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
-                                }
-                              }
-                              width="50"
+                      <tbody>
+                        <Row
+                          key="0"
+                          row={
+                            Array [
+                              2,
+                              0,
+                              0,
+                              0,
+                              0,
+                            ]
+                          }
+                        >
+                          <tr>
+                            <Cell
+                              cellValue={2}
+                              key="0"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="1"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "rgb(128, 140, 0)",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div>
+                                  2
+                                </div>
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="1"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="2"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="2"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="3"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="3"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={4}
-                            key="4"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "rgb(0, 180, 128)",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="4"
                             >
-                              <div>
-                                4
-                              </div>
-                            </td>
-                          </Cell>
-                        </tr>
-                      </Row>
-                      <Row
-                        key="1"
-                        row={
-                          Array [
-                            0,
-                            2,
-                            0,
-                            0,
-                            0,
-                          ]
-                        }
-                      >
-                        <tr>
-                          <Cell
-                            cellValue={0}
-                            key="0"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                          </tr>
+                        </Row>
+                        <Row
+                          key="1"
+                          row={
+                            Array [
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                            ]
+                          }
+                        >
+                          <tr>
+                            <Cell
+                              cellValue={0}
+                              key="0"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={2}
-                            key="1"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "rgb(128, 140, 0)",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="1"
                             >
-                              <div>
-                                2
-                              </div>
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="2"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="2"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="3"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="3"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="4"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="4"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                        </tr>
-                      </Row>
-                      <Row
-                        key="2"
-                        row={
-                          Array [
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                          ]
-                        }
-                      >
-                        <tr>
-                          <Cell
-                            cellValue={0}
-                            key="0"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                          </tr>
+                        </Row>
+                        <Row
+                          key="2"
+                          row={
+                            Array [
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                            ]
+                          }
+                        >
+                          <tr>
+                            <Cell
+                              cellValue={0}
+                              key="0"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="1"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="1"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="2"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="2"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="3"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="3"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="4"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="4"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                        </tr>
-                      </Row>
-                      <Row
-                        key="3"
-                        row={
-                          Array [
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                          ]
-                        }
-                      >
-                        <tr>
-                          <Cell
-                            cellValue={0}
-                            key="0"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                          </tr>
+                        </Row>
+                        <Row
+                          key="3"
+                          row={
+                            Array [
+                              4,
+                              0,
+                              0,
+                              0,
+                              0,
+                            ]
+                          }
+                        >
+                          <tr>
+                            <Cell
+                              cellValue={4}
+                              key="0"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="1"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "rgb(0, 180, 128)",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div>
+                                  4
+                                </div>
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="1"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="2"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="2"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="3"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="3"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="4"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="4"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                        </tr>
-                      </Row>
-                      <Row
-                        key="4"
-                        row={
-                          Array [
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                          ]
-                        }
-                      >
-                        <tr>
-                          <Cell
-                            cellValue={0}
-                            key="0"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                          </tr>
+                        </Row>
+                        <Row
+                          key="4"
+                          row={
+                            Array [
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                            ]
+                          }
+                        >
+                          <tr>
+                            <Cell
+                              cellValue={0}
+                              key="0"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="1"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="1"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="2"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="2"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="3"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="3"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="4"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="4"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                        </tr>
-                      </Row>
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
+                                }
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                          </tr>
+                        </Row>
+                      </tbody>
                     </table>
                     <div />
                   </div>
@@ -4135,7 +4136,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                 >
                   <div>
                     <WithStyles(ForwardRef(Dialog))
-                      onClose={false}
+                      onClose={[Function]}
                       open={false}
                     >
                       <ForwardRef(Dialog)
@@ -4158,7 +4159,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                             "scrollPaper": "MuiDialog-scrollPaper",
                           }
                         }
-                        onClose={false}
+                        onClose={[Function]}
                         open={false}
                       >
                         <ForwardRef(Modal)
@@ -4488,7 +4489,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                           className="MuiDialog-root"
                           closeAfterTransition={true}
                           disableEscapeKeyDown={false}
-                          onClose={false}
+                          onClose={[Function]}
                           open={false}
                         />
                       </ForwardRef(Dialog)>
@@ -4669,9 +4670,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                           <div
                             className="MuiPaper-root makeStyles-paper-2 MuiPaper-elevation1 MuiPaper-rounded"
                           >
-                            <EnhancedTableToolbar
-                              numSelected={0}
-                            >
+                            <EnhancedTableToolbar>
                               <WithStyles(ForwardRef(Toolbar))
                                 className="makeStyles-root-5"
                               >
@@ -4791,7 +4790,6 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                               "visuallyHidden": "makeStyles-visuallyHidden-4",
                                             }
                                           }
-                                          numSelected={0}
                                           onRequestSort={[Function]}
                                           order="desc"
                                           orderBy="score"
@@ -5262,7 +5260,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                         <WithStyles(ForwardRef(Typography))
                                           className="MuiTablePagination-caption"
                                           color="inherit"
-                                          id="mui-10987"
+                                          id="mui-50990"
                                           variant="body2"
                                         >
                                           <ForwardRef(Typography)
@@ -5302,12 +5300,12 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                               }
                                             }
                                             color="inherit"
-                                            id="mui-10987"
+                                            id="mui-50990"
                                             variant="body2"
                                           >
                                             <p
                                               className="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
-                                              id="mui-10987"
+                                              id="mui-50990"
                                             >
                                               Rows per page:
                                             </p>
@@ -5320,13 +5318,13 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                               "select": "MuiTablePagination-select",
                                             }
                                           }
-                                          id="mui-84581"
+                                          id="mui-47559"
                                           input={
                                             <WithStyles(ForwardRef(InputBase))
                                               className="MuiTablePagination-input MuiTablePagination-selectRoot"
                                             />
                                           }
-                                          labelId="mui-10987"
+                                          labelId="mui-50990"
                                           onChange={[Function]}
                                           value={5}
                                         >
@@ -5346,13 +5344,13 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                 "selectMenu": "MuiSelect-selectMenu",
                                               }
                                             }
-                                            id="mui-84581"
+                                            id="mui-47559"
                                             input={
                                               <WithStyles(ForwardRef(InputBase))
                                                 className="MuiTablePagination-input MuiTablePagination-selectRoot"
                                               />
                                             }
-                                            labelId="mui-10987"
+                                            labelId="mui-50990"
                                             onChange={[Function]}
                                             value={5}
                                           >
@@ -5406,7 +5404,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                   },
                                                   "MenuProps": undefined,
                                                   "SelectDisplayProps": Object {
-                                                    "id": "mui-84581",
+                                                    "id": "mui-47559",
                                                   },
                                                   "autoWidth": false,
                                                   "children": Array [
@@ -5443,7 +5441,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                     "selectMenu": "MuiSelect-selectMenu",
                                                   },
                                                   "displayEmpty": false,
-                                                  "labelId": "mui-10987",
+                                                  "labelId": "mui-50990",
                                                   "multiple": false,
                                                   "onClose": undefined,
                                                   "onOpen": undefined,
@@ -5528,7 +5526,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                     },
                                                     "MenuProps": undefined,
                                                     "SelectDisplayProps": Object {
-                                                      "id": "mui-84581",
+                                                      "id": "mui-47559",
                                                     },
                                                     "autoWidth": false,
                                                     "children": Array [
@@ -5565,7 +5563,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                       "selectMenu": "MuiSelect-selectMenu",
                                                     },
                                                     "displayEmpty": false,
-                                                    "labelId": "mui-10987",
+                                                    "labelId": "mui-50990",
                                                     "multiple": false,
                                                     "onClose": undefined,
                                                     "onOpen": undefined,
@@ -5595,7 +5593,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                     }
                                                     SelectDisplayProps={
                                                       Object {
-                                                        "id": "mui-84581",
+                                                        "id": "mui-47559",
                                                       }
                                                     }
                                                     autoWidth={false}
@@ -5617,7 +5615,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                     }
                                                     displayEmpty={false}
                                                     inputRef={[Function]}
-                                                    labelId="mui-10987"
+                                                    labelId="mui-50990"
                                                     multiple={false}
                                                     onAnimationStart={[Function]}
                                                     onBlur={[Function]}
@@ -5628,9 +5626,9 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                   >
                                                     <div
                                                       aria-haspopup="listbox"
-                                                      aria-labelledby="mui-10987 mui-84581"
+                                                      aria-labelledby="mui-50990 mui-47559"
                                                       className="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                      id="mui-84581"
+                                                      id="mui-47559"
                                                       onBlur={[Function]}
                                                       onFocus={[Function]}
                                                       onKeyDown={[Function]}
@@ -5686,7 +5684,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                     <WithStyles(ForwardRef(Menu))
                                                       MenuListProps={
                                                         Object {
-                                                          "aria-labelledby": "mui-10987",
+                                                          "aria-labelledby": "mui-50990",
                                                           "disableListWrap": true,
                                                           "role": "listbox",
                                                         }
@@ -5701,9 +5699,9 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                       anchorEl={
                                                         <div
                                                           aria-haspopup="listbox"
-                                                          aria-labelledby="mui-10987 mui-84581"
+                                                          aria-labelledby="mui-50990 mui-47559"
                                                           class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                          id="mui-84581"
+                                                          id="mui-47559"
                                                           role="button"
                                                           tabindex="0"
                                                         >
@@ -5717,7 +5715,7 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                       <ForwardRef(Menu)
                                                         MenuListProps={
                                                           Object {
-                                                            "aria-labelledby": "mui-10987",
+                                                            "aria-labelledby": "mui-50990",
                                                             "disableListWrap": true,
                                                             "role": "listbox",
                                                           }
@@ -5732,9 +5730,9 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                         anchorEl={
                                                           <div
                                                             aria-haspopup="listbox"
-                                                            aria-labelledby="mui-10987 mui-84581"
+                                                            aria-labelledby="mui-50990 mui-47559"
                                                             class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                            id="mui-84581"
+                                                            id="mui-47559"
                                                             role="button"
                                                             tabindex="0"
                                                           >
@@ -5770,9 +5768,9 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                           anchorEl={
                                                             <div
                                                               aria-haspopup="listbox"
-                                                              aria-labelledby="mui-10987 mui-84581"
+                                                              aria-labelledby="mui-50990 mui-47559"
                                                               class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                              id="mui-84581"
+                                                              id="mui-47559"
                                                               role="button"
                                                               tabindex="0"
                                                             >
@@ -5816,9 +5814,9 @@ exports[`resizes correctly resizes 5x5 board correctly 1`] = `
                                                             anchorEl={
                                                               <div
                                                                 aria-haspopup="listbox"
-                                                                aria-labelledby="mui-10987 mui-84581"
+                                                                aria-labelledby="mui-50990 mui-47559"
                                                                 class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                                id="mui-84581"
+                                                                id="mui-47559"
                                                                 role="button"
                                                                 tabindex="0"
                                                               >
@@ -6878,790 +6876,792 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                       border="1px solid black"
                       border-collapse="collapse"
                     >
-                      <Row
-                        key="0"
-                        row={
-                          Array [
-                            0,
-                            4,
-                            0,
-                            0,
-                            0,
-                            0,
-                          ]
-                        }
-                      >
-                        <tr>
-                          <Cell
-                            cellValue={0}
-                            key="0"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
-                                }
-                              }
-                              width="50"
+                      <tbody>
+                        <Row
+                          key="0"
+                          row={
+                            Array [
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                            ]
+                          }
+                        >
+                          <tr>
+                            <Cell
+                              cellValue={0}
+                              key="0"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={4}
-                            key="1"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "rgb(0, 180, 128)",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="1"
                             >
-                              <div>
-                                4
-                              </div>
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="2"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="2"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="3"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="3"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="4"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="4"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="5"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="5"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                        </tr>
-                      </Row>
-                      <Row
-                        key="1"
-                        row={
-                          Array [
-                            0,
-                            0,
-                            0,
-                            0,
-                            4,
-                            0,
-                          ]
-                        }
-                      >
-                        <tr>
-                          <Cell
-                            cellValue={0}
-                            key="0"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                          </tr>
+                        </Row>
+                        <Row
+                          key="1"
+                          row={
+                            Array [
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                            ]
+                          }
+                        >
+                          <tr>
+                            <Cell
+                              cellValue={0}
+                              key="0"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="1"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="1"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="2"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="2"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="3"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="3"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={4}
-                            key="4"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "rgb(0, 180, 128)",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="4"
                             >
-                              <div>
-                                4
-                              </div>
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="5"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="5"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                        </tr>
-                      </Row>
-                      <Row
-                        key="2"
-                        row={
-                          Array [
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                          ]
-                        }
-                      >
-                        <tr>
-                          <Cell
-                            cellValue={0}
-                            key="0"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                          </tr>
+                        </Row>
+                        <Row
+                          key="2"
+                          row={
+                            Array [
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                            ]
+                          }
+                        >
+                          <tr>
+                            <Cell
+                              cellValue={0}
+                              key="0"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="1"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="1"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="2"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="2"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="3"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="3"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="4"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="4"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="5"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="5"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                        </tr>
-                      </Row>
-                      <Row
-                        key="3"
-                        row={
-                          Array [
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                          ]
-                        }
-                      >
-                        <tr>
-                          <Cell
-                            cellValue={0}
-                            key="0"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                          </tr>
+                        </Row>
+                        <Row
+                          key="3"
+                          row={
+                            Array [
+                              0,
+                              0,
+                              0,
+                              0,
+                              4,
+                              0,
+                            ]
+                          }
+                        >
+                          <tr>
+                            <Cell
+                              cellValue={0}
+                              key="0"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="1"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="1"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="2"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="2"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="3"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="3"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="4"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={4}
+                              key="4"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="5"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "rgb(0, 180, 128)",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div>
+                                  4
+                                </div>
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="5"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                        </tr>
-                      </Row>
-                      <Row
-                        key="4"
-                        row={
-                          Array [
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                          ]
-                        }
-                      >
-                        <tr>
-                          <Cell
-                            cellValue={0}
-                            key="0"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                          </tr>
+                        </Row>
+                        <Row
+                          key="4"
+                          row={
+                            Array [
+                              0,
+                              4,
+                              0,
+                              0,
+                              0,
+                              0,
+                            ]
+                          }
+                        >
+                          <tr>
+                            <Cell
+                              cellValue={0}
+                              key="0"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="1"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={4}
+                              key="1"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="2"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "rgb(0, 180, 128)",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div>
+                                  4
+                                </div>
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="2"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="3"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="3"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="4"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="4"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="5"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="5"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                        </tr>
-                      </Row>
-                      <Row
-                        key="5"
-                        row={
-                          Array [
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                            0,
-                          ]
-                        }
-                      >
-                        <tr>
-                          <Cell
-                            cellValue={0}
-                            key="0"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                          </tr>
+                        </Row>
+                        <Row
+                          key="5"
+                          row={
+                            Array [
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0,
+                            ]
+                          }
+                        >
+                          <tr>
+                            <Cell
+                              cellValue={0}
+                              key="0"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="1"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="1"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="2"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="2"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="3"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="3"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="4"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="4"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                          <Cell
-                            cellValue={0}
-                            key="5"
-                          >
-                            <td
-                              align="center"
-                              border="1px solid black"
-                              border-collapse="collapse"
-                              height="50"
-                              style={
-                                Object {
-                                  "backgroundColor": "white",
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
                                 }
-                              }
-                              width="50"
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                            <Cell
+                              cellValue={0}
+                              key="5"
                             >
-                              <div />
-                            </td>
-                          </Cell>
-                        </tr>
-                      </Row>
+                              <td
+                                align="center"
+                                border="1px solid black"
+                                border-collapse="collapse"
+                                height="50"
+                                style={
+                                  Object {
+                                    "backgroundColor": "white",
+                                  }
+                                }
+                                width="50"
+                              >
+                                <div />
+                              </td>
+                            </Cell>
+                          </tr>
+                        </Row>
+                      </tbody>
                     </table>
                     <div />
                   </div>
@@ -7672,7 +7672,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                 >
                   <div>
                     <WithStyles(ForwardRef(Dialog))
-                      onClose={false}
+                      onClose={[Function]}
                       open={false}
                     >
                       <ForwardRef(Dialog)
@@ -7695,7 +7695,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                             "scrollPaper": "MuiDialog-scrollPaper",
                           }
                         }
-                        onClose={false}
+                        onClose={[Function]}
                         open={false}
                       >
                         <ForwardRef(Modal)
@@ -8025,7 +8025,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                           className="MuiDialog-root"
                           closeAfterTransition={true}
                           disableEscapeKeyDown={false}
-                          onClose={false}
+                          onClose={[Function]}
                           open={false}
                         />
                       </ForwardRef(Dialog)>
@@ -8206,9 +8206,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                           <div
                             className="MuiPaper-root makeStyles-paper-2 MuiPaper-elevation1 MuiPaper-rounded"
                           >
-                            <EnhancedTableToolbar
-                              numSelected={0}
-                            >
+                            <EnhancedTableToolbar>
                               <WithStyles(ForwardRef(Toolbar))
                                 className="makeStyles-root-5"
                               >
@@ -8328,7 +8326,6 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                               "visuallyHidden": "makeStyles-visuallyHidden-4",
                                             }
                                           }
-                                          numSelected={0}
                                           onRequestSort={[Function]}
                                           order="desc"
                                           orderBy="score"
@@ -8799,7 +8796,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                         <WithStyles(ForwardRef(Typography))
                                           className="MuiTablePagination-caption"
                                           color="inherit"
-                                          id="mui-81665"
+                                          id="mui-77891"
                                           variant="body2"
                                         >
                                           <ForwardRef(Typography)
@@ -8839,12 +8836,12 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                               }
                                             }
                                             color="inherit"
-                                            id="mui-81665"
+                                            id="mui-77891"
                                             variant="body2"
                                           >
                                             <p
                                               className="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
-                                              id="mui-81665"
+                                              id="mui-77891"
                                             >
                                               Rows per page:
                                             </p>
@@ -8857,13 +8854,13 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                               "select": "MuiTablePagination-select",
                                             }
                                           }
-                                          id="mui-20040"
+                                          id="mui-8151"
                                           input={
                                             <WithStyles(ForwardRef(InputBase))
                                               className="MuiTablePagination-input MuiTablePagination-selectRoot"
                                             />
                                           }
-                                          labelId="mui-81665"
+                                          labelId="mui-77891"
                                           onChange={[Function]}
                                           value={5}
                                         >
@@ -8883,13 +8880,13 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                 "selectMenu": "MuiSelect-selectMenu",
                                               }
                                             }
-                                            id="mui-20040"
+                                            id="mui-8151"
                                             input={
                                               <WithStyles(ForwardRef(InputBase))
                                                 className="MuiTablePagination-input MuiTablePagination-selectRoot"
                                               />
                                             }
-                                            labelId="mui-81665"
+                                            labelId="mui-77891"
                                             onChange={[Function]}
                                             value={5}
                                           >
@@ -8943,7 +8940,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                   },
                                                   "MenuProps": undefined,
                                                   "SelectDisplayProps": Object {
-                                                    "id": "mui-20040",
+                                                    "id": "mui-8151",
                                                   },
                                                   "autoWidth": false,
                                                   "children": Array [
@@ -8980,7 +8977,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                     "selectMenu": "MuiSelect-selectMenu",
                                                   },
                                                   "displayEmpty": false,
-                                                  "labelId": "mui-81665",
+                                                  "labelId": "mui-77891",
                                                   "multiple": false,
                                                   "onClose": undefined,
                                                   "onOpen": undefined,
@@ -9065,7 +9062,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                     },
                                                     "MenuProps": undefined,
                                                     "SelectDisplayProps": Object {
-                                                      "id": "mui-20040",
+                                                      "id": "mui-8151",
                                                     },
                                                     "autoWidth": false,
                                                     "children": Array [
@@ -9102,7 +9099,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                       "selectMenu": "MuiSelect-selectMenu",
                                                     },
                                                     "displayEmpty": false,
-                                                    "labelId": "mui-81665",
+                                                    "labelId": "mui-77891",
                                                     "multiple": false,
                                                     "onClose": undefined,
                                                     "onOpen": undefined,
@@ -9132,7 +9129,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                     }
                                                     SelectDisplayProps={
                                                       Object {
-                                                        "id": "mui-20040",
+                                                        "id": "mui-8151",
                                                       }
                                                     }
                                                     autoWidth={false}
@@ -9154,7 +9151,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                     }
                                                     displayEmpty={false}
                                                     inputRef={[Function]}
-                                                    labelId="mui-81665"
+                                                    labelId="mui-77891"
                                                     multiple={false}
                                                     onAnimationStart={[Function]}
                                                     onBlur={[Function]}
@@ -9165,9 +9162,9 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                   >
                                                     <div
                                                       aria-haspopup="listbox"
-                                                      aria-labelledby="mui-81665 mui-20040"
+                                                      aria-labelledby="mui-77891 mui-8151"
                                                       className="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                      id="mui-20040"
+                                                      id="mui-8151"
                                                       onBlur={[Function]}
                                                       onFocus={[Function]}
                                                       onKeyDown={[Function]}
@@ -9223,7 +9220,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                     <WithStyles(ForwardRef(Menu))
                                                       MenuListProps={
                                                         Object {
-                                                          "aria-labelledby": "mui-81665",
+                                                          "aria-labelledby": "mui-77891",
                                                           "disableListWrap": true,
                                                           "role": "listbox",
                                                         }
@@ -9238,9 +9235,9 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                       anchorEl={
                                                         <div
                                                           aria-haspopup="listbox"
-                                                          aria-labelledby="mui-81665 mui-20040"
+                                                          aria-labelledby="mui-77891 mui-8151"
                                                           class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                          id="mui-20040"
+                                                          id="mui-8151"
                                                           role="button"
                                                           tabindex="0"
                                                         >
@@ -9254,7 +9251,7 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                       <ForwardRef(Menu)
                                                         MenuListProps={
                                                           Object {
-                                                            "aria-labelledby": "mui-81665",
+                                                            "aria-labelledby": "mui-77891",
                                                             "disableListWrap": true,
                                                             "role": "listbox",
                                                           }
@@ -9269,9 +9266,9 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                         anchorEl={
                                                           <div
                                                             aria-haspopup="listbox"
-                                                            aria-labelledby="mui-81665 mui-20040"
+                                                            aria-labelledby="mui-77891 mui-8151"
                                                             class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                            id="mui-20040"
+                                                            id="mui-8151"
                                                             role="button"
                                                             tabindex="0"
                                                           >
@@ -9307,9 +9304,9 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                           anchorEl={
                                                             <div
                                                               aria-haspopup="listbox"
-                                                              aria-labelledby="mui-81665 mui-20040"
+                                                              aria-labelledby="mui-77891 mui-8151"
                                                               class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                              id="mui-20040"
+                                                              id="mui-8151"
                                                               role="button"
                                                               tabindex="0"
                                                             >
@@ -9353,9 +9350,9 @@ exports[`resizes correctly resizes 6x6 board correctly 1`] = `
                                                             anchorEl={
                                                               <div
                                                                 aria-haspopup="listbox"
-                                                                aria-labelledby="mui-81665 mui-20040"
+                                                                aria-labelledby="mui-77891 mui-8151"
                                                                 class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
-                                                                id="mui-20040"
+                                                                id="mui-8151"
                                                                 role="button"
                                                                 tabindex="0"
                                                               >
